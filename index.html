@@ -1,1204 +1,2071 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>M Jayross Cruspero — Sketchbook Portfolio</title>
-<!-- Google Fonts: Handwritten accents + Crisp readable primary fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=Epilogue:ital,wght@0,400..800;1,400..800&amp;family=Kalam:wght@300;400;700&amp;family=Karla:ital,wght@0,300..800;1,300..800&amp;family=Patrick+Hand&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "secondary": "#4c6544",
-            "on-error-container": "#93000a",
-            "on-surface-variant": "#4b463f",
-            "error-container": "#ffdad6",
-            "on-surface": "#1c1c17",
-            "surface-container": "#f1eee5",
-            "inverse-primary": "#ccc5bf",
-            "surface-tint": "#625e59",
-            "on-tertiary-fixed": "#211b00",
-            "surface-dim": "#dcdad1",
-            "secondary-fixed-dim": "#b2cfa7",
-            "on-tertiary": "#ffffff",
-            "on-primary-fixed": "#1e1b17",
-            "on-tertiary-container": "#4a3f00",
-            "on-error": "#ffffff",
-            "primary-fixed-dim": "#ccc5bf",
-            "inverse-surface": "#31312b",
-            "on-secondary-fixed-variant": "#354d2e",
-            "primary-container": "#24211d",
-            "tertiary-fixed-dim": "#e2c62d",
-            "on-primary-container": "#8d8882",
-            "background": "#fcf9f0",
-            "surface-variant": "#e5e2da",
-            "secondary-fixed": "#cdebc1",
-            "on-secondary-container": "#516b4a",
-            "surface": "#fcf9f0",
-            "on-primary-fixed-variant": "#4a4641",
-            "surface-bright": "#fcf9f0",
-            "error": "#ba1a1a",
-            "on-primary": "#ffffff",
-            "on-secondary": "#ffffff",
-            "tertiary-fixed": "#ffe24c",
-            "outline": "#7c766e",
-            "on-secondary-fixed": "#092007",
-            "tertiary-container": "#c4aa01",
-            "surface-container-low": "#f6f3ea",
-            "on-tertiary-fixed-variant": "#524600",
-            "primary-fixed": "#e9e1db",
-            "on-background": "#1c1c17",
-            "primary": "#0d0a07",
-            "outline-variant": "#cdc5bc",
-            "inverse-on-surface": "#f3f1e8",
-            "secondary-container": "#cdebc1",
-            "surface-container-high": "#ebe8df",
-            "tertiary": "#6d5e00",
-            "surface-container-highest": "#e5e2da",
-            "surface-container-lowest": "#ffffff"
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>M Jayross Cruspero — Sketchbook Portfolio</title>
+    <!-- Google Fonts: Handwritten accents + Crisp readable primary fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=Epilogue:ital,wght@0,400..800;1,400..800&amp;family=Kalam:wght@300;400;700&amp;family=Karla:ital,wght@0,300..800;1,300..800&amp;family=Patrick+Hand&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              secondary: "#4c6544",
+              "on-error-container": "#93000a",
+              "on-surface-variant": "#4b463f",
+              "error-container": "#ffdad6",
+              "on-surface": "#1c1c17",
+              "surface-container": "#f1eee5",
+              "inverse-primary": "#ccc5bf",
+              "surface-tint": "#625e59",
+              "on-tertiary-fixed": "#211b00",
+              "surface-dim": "#dcdad1",
+              "secondary-fixed-dim": "#b2cfa7",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#1e1b17",
+              "on-tertiary-container": "#4a3f00",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#ccc5bf",
+              "inverse-surface": "#31312b",
+              "on-secondary-fixed-variant": "#354d2e",
+              "primary-container": "#24211d",
+              "tertiary-fixed-dim": "#e2c62d",
+              "on-primary-container": "#8d8882",
+              background: "#fcf9f0",
+              "surface-variant": "#e5e2da",
+              "secondary-fixed": "#cdebc1",
+              "on-secondary-container": "#516b4a",
+              surface: "#fcf9f0",
+              "on-primary-fixed-variant": "#4a4641",
+              "surface-bright": "#fcf9f0",
+              error: "#ba1a1a",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed": "#ffe24c",
+              outline: "#7c766e",
+              "on-secondary-fixed": "#092007",
+              "tertiary-container": "#c4aa01",
+              "surface-container-low": "#f6f3ea",
+              "on-tertiary-fixed-variant": "#524600",
+              "primary-fixed": "#e9e1db",
+              "on-background": "#1c1c17",
+              primary: "#0d0a07",
+              "outline-variant": "#cdc5bc",
+              "inverse-on-surface": "#f3f1e8",
+              "secondary-container": "#cdebc1",
+              "surface-container-high": "#ebe8df",
+              tertiary: "#6d5e00",
+              "surface-container-highest": "#e5e2da",
+              "surface-container-lowest": "#ffffff",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              margin: "3rem",
+              "space-md": "1rem",
+              "space-xs": "0.25rem",
+              gutter: "1.5rem",
+              "space-xl": "2.5rem",
+              "gutter-mobile": "1rem",
+              "space-2xl": "4rem",
+              "space-sm": "0.5rem",
+              "margin-mobile": "1.25rem",
+              "space-lg": "1.5rem",
+            },
+            fontFamily: {
+              "label-lg": ["Karla"],
+              "label-md": ["Karla"],
+              "body-md": ["Karla"],
+              "headline-lg": ["Epilogue"],
+              "headline-lg-mobile": ["Epilogue"],
+              "body-sm": ["Karla"],
+              "headline-xl": ["Epilogue"],
+              "body-lg": ["Karla"],
+              "headline-xl-mobile": ["Epilogue"],
+              "label-sm": ["Karla"],
+              "headline-sm": ["Epilogue"],
+              "headline-md": ["Epilogue"],
+              caveat: ["Caveat", "cursive"],
+              kalam: ["Kalam", "cursive"],
+              hand: ["Patrick Hand", "cursive"],
+            },
+            fontSize: {
+              "label-lg": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.04em",
+                  fontWeight: "700",
+                },
+              ],
+              "label-md": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+              "headline-lg": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg-mobile": [
+                "26px",
+                { lineHeight: "34px", fontWeight: "700" },
+              ],
+              "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+              "headline-xl": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "headline-xl-mobile": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "800",
+                },
+              ],
+              "label-sm": ["11px", { lineHeight: "14px", fontWeight: "600" }],
+              "headline-sm": [
+                "20px",
+                { lineHeight: "28px", fontWeight: "600" },
+              ],
+              "headline-md": [
+                "24px",
+                { lineHeight: "32px", fontWeight: "700" },
+              ],
+            },
           },
-          "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
-          },
-          "spacing": {
-            "margin": "3rem",
-            "space-md": "1rem",
-            "space-xs": "0.25rem",
-            "gutter": "1.5rem",
-            "space-xl": "2.5rem",
-            "gutter-mobile": "1rem",
-            "space-2xl": "4rem",
-            "space-sm": "0.5rem",
-            "margin-mobile": "1.25rem",
-            "space-lg": "1.5rem"
-          },
-          "fontFamily": {
-            "label-lg": ["Karla"],
-            "label-md": ["Karla"],
-            "body-md": ["Karla"],
-            "headline-lg": ["Epilogue"],
-            "headline-lg-mobile": ["Epilogue"],
-            "body-sm": ["Karla"],
-            "headline-xl": ["Epilogue"],
-            "body-lg": ["Karla"],
-            "headline-xl-mobile": ["Epilogue"],
-            "label-sm": ["Karla"],
-            "headline-sm": ["Epilogue"],
-            "headline-md": ["Epilogue"],
-            "caveat": ["Caveat", "cursive"],
-            "kalam": ["Kalam", "cursive"],
-            "hand": ["Patrick Hand", "cursive"]
-          },
-          "fontSize": {
-            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }],
-            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "700" }],
-            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }],
-            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
-            "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
-            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-            "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800" }],
-            "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "600" }],
-            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
-            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }]
-          }
         },
-      },
-    }
-  </script>
-<style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      display: inline-block;
-      vertical-align: middle;
-    }
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        display: inline-block;
+        vertical-align: middle;
+      }
 
-    /* Sketchbook Grid Background */
-    .bg-notebook-grid {
-      background-color: #FAF6EB;
-      background-image: 
-        linear-gradient(to right, rgba(36, 33, 29, 0.05) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(36, 33, 29, 0.05) 1px, transparent 1px);
-      background-size: 24px 24px;
-    }
+      /* Sketchbook Grid Background */
+      .bg-notebook-grid {
+        background-color: #faf6eb;
+        background-image:
+          linear-gradient(
+            to right,
+            rgba(36, 33, 29, 0.05) 1px,
+            transparent 1px
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(36, 33, 29, 0.05) 1px,
+            transparent 1px
+          );
+        background-size: 24px 24px;
+      }
 
-    /* Ruled lines for legal pad textarea / notes */
-    .bg-ruled-paper {
-      background-image: repeating-linear-gradient(transparent, transparent 27px, #e3ded1 28px);
-      line-height: 28px;
-    }
+      /* Ruled lines for legal pad textarea / notes */
+      .bg-ruled-paper {
+        background-image: repeating-linear-gradient(
+          transparent,
+          transparent 27px,
+          #e3ded1 28px
+        );
+        line-height: 28px;
+      }
 
-    /* Hand-drawn borders and rough edges */
-    .sketch-border {
-      border: 2px solid #24211D;
-      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-    }
-    .sketch-border-subtle {
-      border: 2px solid #24211D;
-    }
+      /* Hand-drawn borders and rough edges */
+      .sketch-border {
+        border: 2px solid #24211d;
+        border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      }
+      .sketch-border-subtle {
+        border: 2px solid #24211d;
+      }
 
-    /* Washi tape effect */
-    .washi-tape {
-      background: rgba(254, 240, 138, 0.75);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
-      clip-path: polygon(4% 0%, 96% 0%, 100% 10%, 98% 90%, 94% 100%, 6% 100%, 0% 90%, 2% 10%);
-    }
-    .washi-tape-sage {
-      background: rgba(205, 235, 193, 0.8);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
-      clip-path: polygon(3% 0%, 97% 0%, 100% 12%, 97% 88%, 95% 100%, 5% 100%, 0% 88%, 3% 12%);
-    }
+      /* Washi tape effect */
+      .washi-tape {
+        background: rgba(254, 240, 138, 0.75);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        clip-path: polygon(
+          4% 0%,
+          96% 0%,
+          100% 10%,
+          98% 90%,
+          94% 100%,
+          6% 100%,
+          0% 90%,
+          2% 10%
+        );
+      }
+      .washi-tape-sage {
+        background: rgba(205, 235, 193, 0.8);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        clip-path: polygon(
+          3% 0%,
+          97% 0%,
+          100% 12%,
+          97% 88%,
+          95% 100%,
+          5% 100%,
+          0% 88%,
+          3% 12%
+        );
+      }
 
-    /* Sketch button interactions */
-    .sketch-btn {
-      border: 2px solid #24211D;
-      box-shadow: 3px 3px 0px #24211D;
-      transition: all 0.15s ease-in-out;
-    }
-    .sketch-btn:hover {
-      transform: translate(2px, 2px);
-      box-shadow: 1px 1px 0px #24211D;
-    }
-    .sketch-btn:active {
-      transform: translate(3px, 3px);
-      box-shadow: 0px 0px 0px #24211D;
-    }
+      /* Sketch button interactions */
+      .sketch-btn {
+        border: 2px solid #24211d;
+        box-shadow: 3px 3px 0px #24211d;
+        transition: all 0.15s ease-in-out;
+      }
+      .sketch-btn:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 1px 1px 0px #24211d;
+      }
+      .sketch-btn:active {
+        transform: translate(3px, 3px);
+        box-shadow: 0px 0px 0px #24211d;
+      }
 
-    /* Notebook Spine Spiral Wire Rings */
-    .spiral-hole {
-      width: 14px;
-      height: 14px;
-      background: #4b463f;
-      border-radius: 50%;
-      border: 2px solid #24211D;
-      box-shadow: inset 1px 1px 3px rgba(0,0,0,0.4);
-    }
-  </style>
-</head>
-<body class="bg-background text-on-background bg-notebook-grid min-h-screen font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-primary">
-<!-- Top Notebook Spiral Rings (Decorative Top Spine) -->
-<div class="w-full bg-surface-container-high border-b-2 border-primary py-2 px-4 shadow-[0px_2px_0px_#24211D] flex justify-center items-center gap-6 overflow-hidden">
-<div class="flex items-center gap-4 md:gap-8 max-w-7xl mx-auto w-full justify-between">
-<div class="flex items-center gap-2">
-<span class="spiral-hole"></span>
-<span class="spiral-hole"></span>
-<span class="spiral-hole hidden sm:block"></span>
-<span class="spiral-hole hidden md:block"></span>
-</div>
-<div class="text-xs font-kalam text-on-surface-variant tracking-wider flex items-center gap-2">
-<span>✎ SKETCHBOOK FOLIO</span>
-<span class="hidden sm:inline">•</span>
-<span class="hidden sm:inline">SERIES NO. 2025</span>
-<span>•</span>
-<span class="text-secondary font-bold">PAGE: LIVE</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="spiral-hole hidden md:block"></span>
-<span class="spiral-hole hidden sm:block"></span>
-<span class="spiral-hole"></span>
-<span class="spiral-hole"></span>
-</div>
-</div>
-</div>
-<!-- SHARED COMPONENT: TopNavBar (Notebook Index Tabs Shell) -->
-<header class="sticky top-0 z-40 bg-surface dark:bg-surface-container border-b-2 border-primary dark:border-outline-variant shadow-[3px_3px_0px_#24211D] dark:shadow-[3px_3px_0px_#0d0a07]">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin max-w-7xl mx-auto py-space-sm">
-<!-- Brand Logo / Sketchbook Name -->
-<a class="flex items-center gap-2 group" href="#home">
-<span class="text-headline-md font-headline-md text-primary dark:text-inverse-primary tracking-tight font-caveat flex items-center gap-1.5 hover:-translate-y-0.5 hover:translate-x-0.5 transition-transform">
-<span class="text-2xl">✎</span>
-          M Jayross Cruspero
-        </span>
-<span class="hidden sm:inline-block font-hand text-xs bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full border border-primary -rotate-2">
-          portfolio
-        </span>
-</a>
-<!-- Desktop Navigation Tabs (Styled as index page divider tabs) -->
-<nav class="hidden md:flex items-center gap-6">
-<a class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary dark:border-secondary-fixed font-label-lg text-label-lg pb-1 hover:-translate-y-0.5 hover:translate-x-0.5 hover:shadow-[1px_1px_0px_#24211D] transition-all duration-150" href="#home">
-          Home
-        </a>
-<a class="text-on-surface-variant dark:text-outline-variant font-label-lg text-label-lg hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-secondary transition-all duration-150" href="#about">
-          About
-        </a>
-<a class="text-on-surface-variant dark:text-outline-variant font-label-lg text-label-lg hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-secondary transition-all duration-150" href="#skills">
-          Skills
-        </a>
-<a class="text-on-surface-variant dark:text-outline-variant font-label-lg text-label-lg hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-secondary transition-all duration-150" href="#projects">
-          Projects
-        </a>
-<a class="text-on-surface-variant dark:text-outline-variant font-label-lg text-label-lg hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-secondary transition-all duration-150" href="#education">
-          Education
-        </a>
-<a class="text-on-surface-variant dark:text-outline-variant font-label-lg text-label-lg hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-secondary transition-all duration-150" href="#contact">
-          Contact
-        </a>
-</nav>
-<!-- Trailing Action: Say Hello Button -->
-<div class="flex items-center gap-3">
-<a class="sketch-btn bg-secondary-container text-on-secondary-container font-label-lg text-label-lg px-4 py-2 rounded-md flex items-center gap-1.5 hover:-translate-y-0.5 hover:translate-x-0.5 transition-all" href="#contact">
-<span>Say Hello</span>
-<span class="text-sm">✉️</span>
-</a>
-<!-- Mobile Drawer Toggle Button -->
-<button aria-label="Toggle Navigation Drawer" class="md:hidden sketch-btn bg-surface-container p-2 rounded-md text-primary flex items-center justify-center" id="mobile-menu-btn">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-</div>
-</div>
-</header>
-<!-- SHARED COMPONENT: SideNavBar (Modal Drawer) for Mobile -->
-<div class="fixed inset-0 bg-primary/40 backdrop-blur-xs z-50 hidden transition-opacity" id="drawer-backdrop"></div>
-<aside class="fixed top-0 left-0 bottom-0 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden docked left h-full border-r-2 border-primary dark:border-outline-variant shadow-[5px_5px_0px_#24211D] dark:shadow-[5px_5px_0px_#0d0a07] bg-surface-container-low dark:bg-surface-container" id="side-nav-drawer">
-<div class="flex flex-col justify-between h-full p-space-md w-72">
-<!-- Drawer Header -->
-<div>
-<div class="flex justify-between items-center mb-6">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full border-2 border-primary bg-tertiary-fixed flex items-center justify-center font-caveat text-xl font-bold">
-              MJ
-            </div>
-<div>
-<p class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary leading-tight font-caveat">
-                M Jayross Cruspero
-              </p>
-<p class="text-xs font-kalam text-on-surface-variant">Sketchbook Portfolio</p>
-</div>
-</div>
-<button aria-label="Close menu" class="p-1 text-primary hover:text-secondary" id="drawer-close-btn">
-<span class="material-symbols-outlined" data-icon="close">close</span>
-</button>
-</div>
-<!-- Tab Items -->
-<nav class="flex flex-col gap-2">
-<a class="flex items-center gap-space-sm bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-lg px-space-md py-space-sm font-label-lg text-label-lg border border-primary dark:border-outline-variant shadow-[2px_2px_0px_#24211D] drawer-link" href="#home">
-<span class="material-symbols-outlined text-xl" data-icon="home">home</span>
-<span>Home</span>
-</a>
-<a class="flex items-center gap-space-sm text-on-surface-variant dark:text-outline-variant px-space-md py-space-sm font-label-lg text-label-lg hover:bg-surface-variant rounded-lg transition-colors drawer-link" href="#about">
-<span class="material-symbols-outlined text-xl" data-icon="person">person</span>
-<span>About</span>
-</a>
-<a class="flex items-center gap-space-sm text-on-surface-variant dark:text-outline-variant px-space-md py-space-sm font-label-lg text-label-lg hover:bg-surface-variant rounded-lg transition-colors drawer-link" href="#skills">
-<span class="material-symbols-outlined text-xl" data-icon="draw">draw</span>
-<span>Skills</span>
-</a>
-<a class="flex items-center gap-space-sm text-on-surface-variant dark:text-outline-variant px-space-md py-space-sm font-label-lg text-label-lg hover:bg-surface-variant rounded-lg transition-colors drawer-link" href="#projects">
-<span class="material-symbols-outlined text-xl" data-icon="folder_open">folder_open</span>
-<span>Projects</span>
-</a>
-<a class="flex items-center gap-space-sm text-on-surface-variant dark:text-outline-variant px-space-md py-space-sm font-label-lg text-label-lg hover:bg-surface-variant rounded-lg transition-colors drawer-link" href="#education">
-<span class="material-symbols-outlined text-xl" data-icon="school">school</span>
-<span>Education</span>
-</a>
-<a class="flex items-center gap-space-sm text-on-surface-variant dark:text-outline-variant px-space-md py-space-sm font-label-lg text-label-lg hover:bg-surface-variant rounded-lg transition-colors drawer-link" href="#contact">
-<span class="material-symbols-outlined text-xl" data-icon="mail">mail</span>
-<span>Contact</span>
-</a>
-</nav>
-</div>
-<!-- Drawer Footer Action -->
-<div class="pt-4 border-t-2 border-dashed border-primary">
-<a class="w-full sketch-btn bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg py-2 rounded-md flex items-center justify-center gap-2 mb-3 drawer-link" href="#contact">
-<span>Leave a Note</span>
-<span>✍️</span>
-</a>
-<div class="flex justify-around text-xs text-on-surface-variant font-kalam">
-<a class="flex items-center gap-1 hover:text-secondary drawer-link" href="#about">
-<span class="material-symbols-outlined text-sm" data-icon="auto_stories">auto_stories</span> Guestbook
-          </a>
-<a class="flex items-center gap-1 hover:text-secondary drawer-link" href="#footer">
-<span class="material-symbols-outlined text-sm" data-icon="info">info</span> Colophon
-          </a>
-</div>
-</div>
-</div>
-</aside>
-<!-- MAIN CANVAS CONTAINER -->
-<main class="max-w-7xl mx-auto px-4 sm:px-6 md:px-margin py-8 md:py-12 space-y-20 md:space-y-28">
-<!-- ========================================== -->
-<!-- SECTION 1: HERO / PAGE 01 (COVER & INTRO)  -->
-<!-- ========================================== -->
-<section class="relative pt-4 pb-8" id="home">
-<!-- Notebook Page Marker / Flag -->
-<div class="inline-flex items-center gap-2 mb-6">
-<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 font-kalam text-sm font-bold sketch-border rotate-[-1deg] shadow-[2px_2px_0px_#24211D]">
-          PAGE 01 // COVER &amp; INTRO
-        </span>
-<span class="text-xs font-hand text-on-surface-variant">Vol. 2025 • Student Folio</span>
-</div>
-<!-- Hero Grid Layout -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-<!-- Left: Intro Typography & Doodles -->
-<div class="lg:col-span-7 space-y-6">
-<div class="relative">
-<!-- Hand-drawn Star Doodle Top Left -->
-<svg class="w-8 h-8 text-tertiary absolute -top-8 -left-4 animate-pulse" fill="currentColor" viewbox="0 0 24 24">
-<path d="M12 2l2.4 6.8H21l-5.6 4.3 2.1 6.9-5.5-4.1-5.5 4.1 2.1-6.9L3 8.8h6.6z"></path>
-</svg>
-<!-- Main Heading with handwriting feel -->
-<h1 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl text-primary leading-tight">
-              Hey, I'm <span class="font-caveat text-5xl md:text-6xl text-secondary font-bold inline-block hover:scale-105 transition-transform cursor-pointer">Jayross!</span>
-</h1>
-<!-- Wavy Underline SVG -->
-<div class="w-48 sm:w-64 -mt-1 mb-4">
-<svg class="w-full text-secondary stroke-current stroke-[3]" fill="none" viewbox="0 0 260 20" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 14C35 4 65 18 97 12C129 6 159 18 191 12C223 6 245 15 257 11"></path>
-</svg>
-</div>
-</div>
-<!-- Subtitle with soft yellow highlighter effect -->
-<div class="inline-block relative">
-<span class="absolute inset-0 bg-tertiary-fixed/60 -rotate-1 rounded-sm transform scale-y-90"></span>
-<p class="relative font-kalam text-lg sm:text-xl font-bold text-on-tertiary-fixed px-3 py-1">
-              IT Student • Aspiring Developer • Tech Enthusiast
-            </p>
-</div>
-<!-- Paragraph text -->
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
-            I'm a college student passionate about technology, programming, and creating digital solutions. I enjoy exploring new ideas, learning new technologies, and turning concepts into functional projects.
-          </p>
-<!-- Annotations & CTA Button Group -->
-<div class="pt-4 space-y-4">
-<div class="flex flex-wrap items-center gap-4">
-<a class="sketch-btn bg-secondary text-on-secondary font-label-lg text-label-lg px-6 py-3.5 rounded-lg flex items-center gap-2 group" href="#projects">
-<span>Explore My Work</span>
-<span class="font-caveat text-xl group-hover:rotate-12 transition-transform">✎</span>
-</a>
-<a class="sketch-btn bg-surface-container-low text-primary font-label-lg text-label-lg px-6 py-3.5 rounded-lg flex items-center gap-2 group" href="#contact">
-<span>Say Hello!</span>
-<span class="text-base group-hover:translate-x-1 transition-transform">✉</span>
-</a>
-</div>
-<!-- Hand-drawn arrow annotation -->
-<div class="flex items-center gap-2 pt-2 text-on-surface-variant font-caveat text-xl">
-<svg class="w-6 h-6 rotate-12 text-secondary stroke-current fill-none stroke-[2]" viewbox="0 0 24 24">
-<path d="M4 4c6 2 12 8 14 14m0 0l-5-1m5 1l-1-5"></path>
-</svg>
-<span>Check out my practical builds below! ✦</span>
-</div>
-</div>
-<!-- Margin Quick Fact Badge -->
-<div class="pt-2 flex items-center gap-4 text-xs font-hand text-on-surface-variant">
-<span class="bg-surface-variant px-3 py-1 rounded-full border border-primary/40 flex items-center gap-1">
-              ☕ Powered by Coffee &amp; Curiosity
-            </span>
-<span class="hidden sm:inline-block bg-surface-variant px-3 py-1 rounded-full border border-primary/40">
-              📍 Davao City / Philippines
-            </span>
-</div>
-</div>
-<!-- Right: Polaroid Sketch Photo & Tape Accents -->
-<div class="lg:col-span-5 flex justify-center">
-<div class="relative w-full max-w-sm rotate-2 hover:rotate-0 transition-transform duration-300">
-<!-- Washi tape at top of polaroid -->
-<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-28 h-7 washi-tape z-10 -rotate-2"></div>
-<!-- Polaroid Frame Card -->
-<div class="bg-surface-container-lowest border-2 border-primary p-4 pb-6 shadow-[5px_5px_0px_#24211D] rounded-sm">
-<!-- Image Container -->
-<div class="relative w-full aspect-square bg-surface-variant border-2 border-primary/80 overflow-hidden mb-4">
-<img class="w-full h-full object-cover" data-alt="A warm, candid creative photograph of a young Southeast Asian male IT student at a wooden desk with a laptop, an open paper sketchbook with hand-drawn system diagrams, and a steaming coffee mug. Soft morning sunlight streams into the cozy room, creating natural warm cream and earth tones. The aesthetic is authentic, studious, and tactile." src="formal cruspero.png"/>
-<!-- Hand-sketched corner accent -->
-<div class="absolute bottom-2 right-2 font-hand text-xs bg-surface-container/90 px-2 py-0.5 border border-primary rounded">
-                  snap.2025
-                </div>
-</div>
-<!-- Polaroid Handwritten Caption -->
-<div class="text-center font-caveat text-xl text-primary font-bold tracking-wide">
-                "Me working on code &amp; coffee ☕"
-              </div>
-<div class="mt-2 text-center text-xs font-kalam text-on-surface-variant">
-                BSIT Student // Crafting Digital Ideas
-              </div>
-</div>
-<!-- Sticky Note Attached to Polaroid Corner -->
-<div class="absolute -bottom-6 -left-6 bg-tertiary-fixed text-on-tertiary-fixed p-3 border-2 border-primary shadow-[3px_3px_0px_#24211D] rotate-[-6deg] w-36">
-<p class="font-caveat text-base font-bold leading-tight">
-                "Small steps every day = big code milestones!"
-              </p>
-</div>
-<!-- Paperclip decoration -->
-<div class="absolute -top-2 right-6 w-5 h-10 border-2 border-outline rounded-full -rotate-12 pointer-events-none"></div>
-</div>
-</div>
-</div>
-</section>
-<!-- ========================================== -->
-<!-- SECTION 2: ABOUT ME / PAGE 02              -->
-<!-- ========================================== -->
-<section class="relative pt-6" id="about">
-<!-- Section Divider -->
-<div class="flex items-center gap-4 mb-8">
-<span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-kalam text-sm font-bold sketch-border rotate-1 shadow-[2px_2px_0px_#24211D]">
-          PAGE 02 // A LITTLE ABOUT ME
-        </span>
-<div class="h-0.5 flex-1 border-t-2 border-dashed border-primary"></div>
-</div>
-<!-- Section Headline -->
-<div class="mb-10">
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary flex items-center gap-3">
-<span>A Little About Me</span>
-<span class="font-caveat text-secondary text-3xl hidden sm:inline">🌿 [Who I Am]</span>
-</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-2">
-          An IT student eager to bridge theoretical foundations with everyday utility. Continuously improving skills through academic projects, team collaborations, and hands-on experimentation.
-        </p>
-</div>
-<!-- Scrapbook Grid: Sticky Notes & Memo Cards -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-start">
-<!-- Sticky-Note Card 1: Personal Info (Yellow note) -->
-<div class="relative bg-tertiary-fixed/90 text-on-tertiary-fixed p-6 border-2 border-primary shadow-[4px_4px_0px_#24211D] rotate-[-1.5deg] hover:rotate-0 transition-transform duration-200">
-<!-- Tape overlay -->
-<div class="absolute -top-3 left-1/3 w-20 h-6 washi-tape"></div>
-<div class="flex items-center justify-between mb-4">
-<span class="font-caveat text-2xl font-bold text-primary">📌 Personal Info</span>
-<span class="font-hand text-xs bg-surface-lowest px-2 py-0.5 border border-primary rounded">Profile</span>
-</div>
-<ul class="space-y-3 font-body-sm text-body-sm text-primary">
-<li>
-<strong class="font-label-md text-label-md block text-on-surface-variant font-bold">NAME:</strong>
-<span class="font-bold text-base">M Jayross Cruspero</span>
-</li>
-<li>
-<strong class="font-label-md text-label-md block text-on-surface-variant font-bold">ROLE:</strong>
-<span>Student Developer</span>
-</li>
-<li>
-<strong class="font-label-md text-label-md block text-on-surface-variant font-bold">DEGREE PROGRAM:</strong>
-<span>Bachelor of Science in Information Technology</span>
-</li>
-<li>
-<strong class="font-label-md text-label-md block text-on-surface-variant font-bold">AREAS OF PASSION:</strong>
-<span>Programming, Web Development, UI/UX Design, and Systems Logic</span>
-</li>
-</ul>
-<!-- Folded bottom corner effect -->
-<div class="mt-6 pt-3 border-t border-primary/30 flex justify-between items-center text-xs font-kalam">
-<span>Status: Actively Learning</span>
-<span>✦ 2025</span>
-</div>
-</div>
-<!-- Sticky-Note Card 2: My Philosophy (Sage Green Note) -->
-<div class="relative bg-secondary-container text-on-secondary-container p-6 border-2 border-primary shadow-[4px_4px_0px_#24211D] rotate-[1.5deg] hover:rotate-0 transition-transform duration-200">
-<!-- Washi tape sage overlay -->
-<div class="absolute -top-3 right-1/4 w-20 h-6 washi-tape-sage"></div>
-<div class="flex items-center justify-between mb-4">
-<span class="font-caveat text-2xl font-bold text-primary">🌱 My Philosophy</span>
-<span class="material-symbols-outlined text-xl" data-icon="draw">draw</span>
-</div>
-<div class="py-4">
-<p class="font-caveat text-2xl text-primary font-bold leading-snug">
-              "Turning curious ideas into clean code, one notebook scribble at a time."
-            </p>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface leading-relaxed mt-2">
-            I believe good software begins with clear sketching and active listening. Before typing a single bracket, I sketch workflows and break complex requirements into human-friendly steps.
-          </p>
-<div class="mt-6 pt-3 border-t border-primary/30 flex justify-between items-center font-hand text-xs">
-<span>Craft over shortcuts</span>
-<span>Iterate constantly</span>
-</div>
-</div>
-<!-- Sticky-Note Card 3: Current Focus (Kraft Paper Note) -->
-<div class="relative bg-surface-variant text-on-surface p-6 border-2 border-primary shadow-[4px_4px_0px_#24211D] rotate-[-1deg] hover:rotate-0 transition-transform duration-200">
-<!-- Pushpin circle doodle top center -->
-<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-error border-2 border-primary shadow-sm flex items-center justify-center">
-<div class="w-1.5 h-1.5 bg-surface rounded-full"></div>
-</div>
-<div class="flex items-center justify-between mb-4 mt-1">
-<span class="font-caveat text-2xl font-bold text-primary">🎯 Current Focus</span>
-<span class="font-hand text-xs bg-surface-container-high px-2 py-0.5 border border-primary rounded">In-Progress</span>
-</div>
-<div class="space-y-3 font-body-sm text-body-sm">
-<div class="flex items-start gap-2">
-<span class="text-secondary font-bold font-caveat text-xl">✓</span>
-<p>Building practical student management and database applications.</p>
-</div>
-<div class="flex items-start gap-2">
-<span class="text-secondary font-bold font-caveat text-xl">✓</span>
-<p>Honing front-end layout craftsmanship with semantic HTML and responsive CSS.</p>
-</div>
-<div class="flex items-start gap-2">
-<span class="text-secondary font-bold font-caveat text-xl">✓</span>
-<p>Exploring accessible, delightful UI/UX design prototypes in Figma.</p>
-</div>
-</div>
-<!-- Hand-drawn Lightbulb Tip -->
-<div class="mt-6 p-2.5 bg-surface-container-low border border-dashed border-primary rounded flex items-center gap-2">
-<span class="text-xl">💡</span>
-<p class="font-hand text-xs text-primary leading-tight">
-              Tip: Clean variable naming saves hours of late-night debugging!
-            </p>
-</div>
-</div>
-</div>
-</section>
-<!-- ========================================== -->
-<!-- SECTION 3: SKILLS / PAGE 03                -->
-<!-- ========================================== -->
-<section class="relative pt-6" id="skills">
-<!-- Section Divider -->
-<div class="flex items-center gap-4 mb-8">
-<span class="bg-surface-variant text-primary px-3 py-1 font-kalam text-sm font-bold sketch-border -rotate-1 shadow-[2px_2px_0px_#24211D]">
-          PAGE 03 // THINGS I'M LEARNING
-        </span>
-<div class="h-0.5 flex-1 border-t-2 border-dashed border-primary"></div>
-</div>
-<!-- Section Title & Authentic Stamp -->
-<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
-<div>
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">
-            Things I'm Learning
-          </h2>
-<p class="font-kalam text-secondary text-base md:text-lg mt-1">
-            "No fake percentages here — just honest technologies and tools I actively practice and explore!"
-          </p>
-</div>
-<!-- Hand-drawn stamp badge -->
-<div class="inline-block border-2 border-dashed border-secondary bg-secondary-fixed/50 px-3 py-1.5 rounded rotate-3 self-start sm:self-auto">
-<p class="font-kalam text-xs font-bold text-on-secondary-fixed text-center">
-            ★ VERIFIED WORK-IN-PROGRESS ★
-          </p>
-</div>
-</div>
-<!-- Skills 3-Column Bento Notebook Layout -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Category 1: Programming Foundations -->
-<div class="bg-surface-container-lowest border-2 border-primary p-6 rounded-md shadow-[4px_4px_0px_#24211D]">
-<div class="flex items-center justify-between border-b-2 border-primary/20 pb-3 mb-5">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-2xl" data-icon="terminal">terminal</span>
-<h3 class="font-headline-sm text-headline-sm text-primary">Programming</h3>
-</div>
-<span class="font-hand text-xs bg-surface-container px-2 py-0.5 rounded border border-primary/30">Code</span>
-</div>
-<div class="space-y-4">
-<!-- Java -->
-<div class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors">
-<div class="flex justify-between items-center mb-1">
-<span class="font-bold text-primary font-headline-sm text-base">Java</span>
-<span class="font-hand text-xs bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded border border-primary">Core Focus</span>
-</div>
-<p class="text-xs text-on-surface-variant font-body-sm">
-                Object-Oriented Programming, linked list data structures, console utilities &amp; foundational algorithmic logic.
-              </p>
-</div>
-<!-- HTML -->
-<div class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors">
-<div class="flex justify-between items-center mb-1">
-<span class="font-bold text-primary font-headline-sm text-base">HTML5</span>
-<span class="font-hand text-xs bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded border border-primary">Daily Practice</span>
-</div>
-<p class="text-xs text-on-surface-variant font-body-sm">
-                Semantic web structuring, clean markup, accessibility principles, and document outlines.
-              </p>
-</div>
-<!-- CSS -->
-<div class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors">
-<div class="flex justify-between items-center mb-1">
-<span class="font-bold text-primary font-headline-sm text-base">CSS3 &amp; Styling</span>
-<span class="font-hand text-xs bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded border border-primary">Responsive</span>
-</div>
-<p class="text-xs text-on-surface-variant font-body-sm">
-                Flexbox layouts, CSS Grid, media queries, tactile shadow styling, and theme systems.
-              </p>
-</div>
-</div>
-</div>
-<!-- Category 2: Tools & Workflow -->
-<div class="bg-surface-container-lowest border-2 border-primary p-6 rounded-md shadow-[4px_4px_0px_#24211D]">
-<div class="flex items-center justify-between border-b-2 border-primary/20 pb-3 mb-5">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-2xl" data-icon="build">build</span>
-<h3 class="font-headline-sm text-headline-sm text-primary">Tools &amp; IDEs</h3>
-</div>
-<span class="font-hand text-xs bg-surface-container px-2 py-0.5 rounded border border-primary/30">Gear</span>
-</div>
-<div class="space-y-4">
-<!-- VS Code -->
-<div class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors">
-<div class="flex justify-between items-center mb-1">
-<span class="font-bold text-primary font-headline-sm text-base">VS Code</span>
-<span class="font-hand text-xs bg-surface-container-high px-2 py-0.5 rounded border border-primary">Primary Editor</span>
-</div>
-<p class="text-xs text-on-surface-variant font-body-sm">
-                Front-end experimentation, extensions configuration, markdown notes, and quick prototyping.
-              </p>
-</div>
-<!-- NetBeans -->
-<div class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors">
-<div class="flex justify-between items-center mb-1">
-<span class="font-bold text-primary font-headline-sm text-base">NetBeans IDE</span>
-<span class="font-hand text-xs bg-surface-container-high px-2 py-0.5 rounded border border-primary">Academic IDE</span>
-</div>
-<p class="text-xs text-on-surface-variant font-body-sm">
-                Java project compilation, console debugging, and data structure laboratory exercises.
-              </p>
-</div>
-<!-- Figma -->
-<div class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors">
-<div class="flex justify-between items-center mb-1">
-<span class="font-bold text-primary font-headline-sm text-base">Figma</span>
-<span class="font-hand text-xs bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded border border-primary">Design &amp; UI</span>
-</div>
-<p class="text-xs text-on-surface-variant font-body-sm">
-                Low-fidelity sketches, wireframing user journeys, component libraries, and interactive page mockups.
-              </p>
-</div>
-</div>
-</div>
-<!-- Category 3: Technical Interests & Horizons -->
-<div class="bg-surface-container-lowest border-2 border-primary p-6 rounded-md shadow-[4px_4px_0px_#24211D]">
-<div class="flex items-center justify-between border-b-2 border-primary/20 pb-3 mb-5">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-2xl" data-icon="explore">explore</span>
-<h3 class="font-headline-sm text-headline-sm text-primary">Interests</h3>
-</div>
-<span class="font-hand text-xs bg-surface-container px-2 py-0.5 rounded border border-primary/30">Curiosity</span>
-</div>
-<div class="space-y-3 font-body-sm text-body-sm">
-<div class="p-2.5 bg-surface-container-low border border-dashed border-primary rounded flex items-center gap-3">
-<span class="text-xl">🌐</span>
-<div>
-<strong class="font-bold text-primary block text-sm">Web Development</strong>
-<span class="text-xs text-on-surface-variant">Semantic web solutions &amp; creative frontend styling</span>
-</div>
-</div>
-<div class="p-2.5 bg-surface-container-low border border-dashed border-primary rounded flex items-center gap-3">
-<span class="text-xl">🎨</span>
-<div>
-<strong class="font-bold text-primary block text-sm">UI/UX Design</strong>
-<span class="text-xs text-on-surface-variant">Human-centered layouts &amp; responsive visual interfaces</span>
-</div>
-</div>
-<div class="p-2.5 bg-surface-container-low border border-dashed border-primary rounded flex items-center gap-3">
-<span class="text-xl">🗄️</span>
-<div>
-<strong class="font-bold text-primary block text-sm">Database Management</strong>
-<span class="text-xs text-on-surface-variant">Relational schemas, SQL queries &amp; data integrity</span>
-</div>
-</div>
-<div class="p-2.5 bg-surface-container-low border border-dashed border-primary rounded flex items-center gap-3">
-<span class="text-xl">⚙️</span>
-<div>
-<strong class="font-bold text-primary block text-sm">Computer Hardware</strong>
-<span class="text-xs text-on-surface-variant">System components, troubleshooting &amp; computer setup</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ========================================== -->
-<!-- SECTION 4: PROJECTS / PAGE 04              -->
-<!-- ========================================== -->
-<section class="relative pt-6" id="projects">
-<!-- Section Divider -->
-<div class="flex items-center gap-4 mb-8">
-<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 font-kalam text-sm font-bold sketch-border rotate-1 shadow-[2px_2px_0px_#24211D]">
-          PAGE 04 // STUFF I'VE BUILT
-        </span>
-<div class="h-0.5 flex-1 border-t-2 border-dashed border-primary"></div>
-</div>
-<!-- Section Headline & Doodle Banner -->
-<div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
-<div>
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary flex items-center gap-3">
-<span>Stuff I've Built</span>
-<span class="font-caveat text-secondary text-2xl hidden sm:inline">📂 [Project Folio]</span>
-</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
-            Academic projects, prototype experiments, and console software created with attention to detail and practical usability.
-          </p>
-</div>
-<div class="font-caveat text-base text-on-surface-variant">
-          Tap cards to examine details ↘
+      /* Notebook Spine Spiral Wire Rings */
+      .spiral-hole {
+        width: 14px;
+        height: 14px;
+        background: #4b463f;
+        border-radius: 50%;
+        border: 2px solid #24211d;
+        box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-on-background bg-notebook-grid min-h-screen font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-primary"
+  >
+    <!-- Top Notebook Spiral Rings (Decorative Top Spine) -->
+    <div
+      class="w-full bg-surface-container-high border-b-2 border-primary py-2 px-4 shadow-[0px_2px_0px_#24211D] flex justify-center items-center gap-6 overflow-hidden"
+    >
+      <div
+        class="flex items-center gap-4 md:gap-8 max-w-7xl mx-auto w-full justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <span class="spiral-hole"></span>
+          <span class="spiral-hole"></span>
+          <span class="spiral-hole hidden sm:block"></span>
+          <span class="spiral-hole hidden md:block"></span>
         </div>
-</div>
-<!-- Projects Grid: Scrapbook Cards with Organic Tilts -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- PROJECT 01: PRESERVA -->
-<article class="relative bg-surface-container-lowest border-2 border-primary p-5 rounded-md shadow-[5px_5px_0px_#24211D] rotate-[-1deg] hover:rotate-0 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<!-- Washi tape at top -->
-<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-28 h-6 washi-tape-sage z-10"></div>
-<div>
-<!-- Thumbnail Visual -->
-<div class="relative w-full aspect-video bg-surface-variant border-2 border-primary overflow-hidden rounded mb-4">
-<img class="w-full h-full object-cover" data-alt="A clean, modern web interface mockup design for Preserva, a fresh produce surplus marketplace. The screen displays a warm, earthy color scheme with green and cream tones, showing local farm produce, price discount tags, and vendor stall cards in an organized card grid. Hand-drawn wireframe pencil sketches border the digital interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3foxxZAsxzvKbExyWRnR-IUb6TspKIgsXMRBfWCEWPNxh5WqQL6j7sfG4oEyI0n6qMxf6_nVkfvL55EJpuWpdYkxbXgiLeP8-h0yIW71ftDwDXujOAXTcOo-JucsbrsQYg5bny1o80Dch5htVkE6RO9KV7YhtrMSfmCce7kxDblxjxquA3F9ThYtc_vkuCH_68iZ10S7dSwk1p6IHoCB295nD8WXhCNwMQzeTbR5g"/>
-<span class="absolute top-2 left-2 bg-primary text-on-primary font-kalam text-xs font-bold px-2 py-0.5 rounded">
-                01
-              </span>
-</div>
-<div class="flex items-center justify-between mb-2">
-<span class="font-kalam text-xs font-bold text-secondary uppercase tracking-wider">Startup Concept &amp; Prototype</span>
-<span class="font-hand text-xs text-on-surface-variant">Academic 2024-2025</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-2">
-              PRESERVA
-            </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
-              A startup concept that connects local produce vendors with potential buyers. Its goal is to reduce food waste by helping vendors sell unsold fruits and vegetables before they spoil.
-            </p>
-<!-- Tags -->
-<div class="flex flex-wrap gap-1.5 mb-6">
-<span class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded">HTML</span>
-<span class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded">CSS</span>
-<span class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded">JavaScript</span>
-<span class="font-hand text-xs bg-tertiary-fixed text-on-tertiary-fixed border border-primary px-2 py-0.5 rounded">Figma</span>
-</div>
-</div>
-<!-- Bottom Action -->
-<div class="pt-3 border-t-2 border-dashed border-primary/30 flex items-center justify-between">
-<span class="font-caveat text-sm text-secondary font-bold">Food Waste Reduction</span>
-<a class="sketch-btn bg-surface text-primary font-label-md text-label-md px-3 py-1.5 rounded flex items-center gap-1" href="#contact">
-<span>View Project</span>
-<span class="text-xs">↗</span>
-</a>
-</div>
-</article>
-<!-- PROJECT 02: STUDENT ROSTER MANAGEMENT SYSTEM -->
-<article class="relative bg-surface-container-lowest border-2 border-primary p-5 rounded-md shadow-[5px_5px_0px_#24211D] rotate-[1.2deg] hover:rotate-0 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<!-- Washi tape at top -->
-<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-28 h-6 washi-tape z-10"></div>
-<div>
-<!-- Thumbnail Visual -->
-<div class="relative w-full aspect-video bg-surface-variant border-2 border-primary overflow-hidden rounded mb-4">
-<img class="w-full h-full object-cover" data-alt="A clean terminal code environment showing Java source code and a console application for a Student Roster Management System. The dark terminal window features organized linked-list node outputs and alphabetical sorting displays, placed alongside a hand-sketched algorithm flow diagram on graph paper in natural warm ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8ydLQEr1dWpSeVTWxgH8cUmZw1hu1SZnwMFXpis88Vjt86AjiUrMIkxsekxParhxpOYsFFJS2RCILDs9l2ZDnbz_cj7QrBULPkKG20a1Ksg3-ynBGkM8ffnj-LmFSM4Jd07es0inWUJ7T-1F1nyHIxeN-ZI0bPUrqDidcEVlk-WoY0EZD2mkX8DOiSjOVIrgKBBbPQt-kXFyPaf7RNIUMtRbKkAffsrtDDbuGFfxc"/>
-<span class="absolute top-2 left-2 bg-primary text-on-primary font-kalam text-xs font-bold px-2 py-0.5 rounded">
-                02
-              </span>
-</div>
-<div class="flex items-center justify-between mb-2">
-<span class="font-kalam text-xs font-bold text-secondary uppercase tracking-wider">Java Console Application</span>
-<span class="font-hand text-xs text-on-surface-variant">Data Structures</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-2">
-              Student Roster System
-            </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
-              A Java-based console application that manages student records using singly linked list operations. Features include inserting, deleting, and displaying student records alphabetically.
-            </p>
-<!-- Tags -->
-<div class="flex flex-wrap gap-1.5 mb-6">
-<span class="font-hand text-xs bg-secondary-container text-on-secondary-container border border-primary px-2 py-0.5 rounded">Java</span>
-<span class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded">NetBeans IDE</span>
-<span class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded">Linked Lists</span>
-<span class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded">Algorithms</span>
-</div>
-</div>
-<!-- Bottom Action -->
-<div class="pt-3 border-t-2 border-dashed border-primary/30 flex items-center justify-between">
-<span class="font-caveat text-sm text-secondary font-bold">Terminal / OOP</span>
-<a class="sketch-btn bg-surface text-primary font-label-md text-label-md px-3 py-1.5 rounded flex items-center gap-1" href="#contact">
-<span>View Project</span>
-<span class="text-xs">↗</span>
-</a>
-</div>
-</article>
-<!-- PROJECT 03: FIGMA PROTOTYPES -->
-<article class="relative bg-surface-container-lowest border-2 border-primary p-5 rounded-md shadow-[5px_5px_0px_#24211D] rotate-[-0.8deg] hover:rotate-0 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<!-- Pushpin accent -->
-<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-secondary border-2 border-primary shadow-sm flex items-center justify-center z-10">
-<div class="w-1.5 h-1.5 bg-surface rounded-full"></div>
-</div>
-<div>
-<!-- Thumbnail Visual -->
-<div class="relative w-full aspect-video bg-surface-variant border-2 border-primary overflow-hidden rounded mb-4 mt-1">
-<img class="w-full h-full object-cover" data-alt="A curated showcase of Figma UI/UX interface prototypes including mobile wireframes, user flow diagrams, responsive dashboard layouts, and design system components. The aesthetic is clean and tactile with cream paper backdrops, graphite borders, and sage green accent elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArHiJjytj6Nh9GCn68VZ3hwmC9GB1TM9x7qr5gKy-haD1PwWipK2lU4WIrucuLBCgc3uE0--W_PogW9_GusQ_GTnstQuKm-KTCHlgXimR-5JjhV95MbvJyEOAtwhnCgcpwwy4HFfzsGTgTEDpnssuTfQW4jbiP7Hm-XUqYILiD1ulQzZrKSoh4Ps4ErwmuqLp-JpyxTnftNvW0-sUFljfHedhqH7kHoSb4h1fIrqe3"/>
-<span class="absolute top-2 left-2 bg-primary text-on-primary font-kalam text-xs font-bold px-2 py-0.5 rounded">
-                03
-              </span>
-</div>
-<div class="flex items-center justify-between mb-2">
-<span class="font-kalam text-xs font-bold text-secondary uppercase tracking-wider">UI / UX Exploration</span>
-<span class="font-hand text-xs text-on-surface-variant">Visual Design</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-2">
-              Figma Prototypes
-            </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
-              Interface prototypes focused on clean layouts, intuitive navigation, and user-friendly website experiences created for academic scenarios and personal creative experiments.
-            </p>
-<!-- Tags -->
-<div class="flex flex-wrap gap-1.5 mb-6">
-<span class="font-hand text-xs bg-tertiary-fixed text-on-tertiary-fixed border border-primary px-2 py-0.5 rounded">Figma</span>
-<span class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded">UI/UX</span>
-<span class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded">Wireframing</span>
-<span class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded">User Flows</span>
-</div>
-</div>
-<!-- Bottom Action -->
-<div class="pt-3 border-t-2 border-dashed border-primary/30 flex items-center justify-between">
-<span class="font-caveat text-sm text-secondary font-bold">Interactive Previews</span>
-<a class="sketch-btn bg-surface text-primary font-label-md text-label-md px-3 py-1.5 rounded flex items-center gap-1" href="#contact">
-<span>View Project</span>
-<span class="text-xs">↗</span>
-</a>
-</div>
-</article>
-</div>
-</section>
-<!-- ========================================== -->
-<!-- SECTION 5: EDUCATION / PAGE 05             -->
-<!-- ========================================== -->
-<section class="relative pt-6" id="education">
-<!-- Section Divider -->
-<div class="flex items-center gap-4 mb-8">
-<span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-kalam text-sm font-bold sketch-border rotate-1 shadow-[2px_2px_0px_#24211D]">
-          PAGE 05 // MY LEARNING JOURNEY
-        </span>
-<div class="h-0.5 flex-1 border-t-2 border-dashed border-primary"></div>
-</div>
-<!-- Section Headline -->
-<div class="mb-10">
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary flex items-center gap-3">
-<span>My Learning Journey</span>
-<span class="font-caveat text-secondary text-2xl hidden sm:inline">🎓 [Academic Path]</span>
-</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
-          A continuous path of formal coursework, self-directed research, and practical hands-on technology discovery.
-        </p>
-</div>
-<!-- Illustrated Timeline Road Path -->
-<div class="relative border-l-4 border-dashed border-primary ml-4 md:ml-10 pl-6 md:pl-10 space-y-12">
-<!-- Milestone 1: BSIT Degree Coursework -->
-<div class="relative group">
-<!-- Pin on Timeline -->
-<div class="absolute -left-[35px] md:-left-[51px] top-1.5 w-7 h-7 rounded-full bg-tertiary-fixed border-2 border-primary flex items-center justify-center font-caveat font-bold text-sm shadow-[2px_2px_0px_#24211D]">
-            01
+        <div
+          class="text-xs font-kalam text-on-surface-variant tracking-wider flex items-center gap-2"
+        >
+          <span>✎ SKETCHBOOK FOLIO</span>
+          <span class="hidden sm:inline">•</span>
+          <span class="hidden sm:inline">SERIES NO. 2025</span>
+          <span>•</span>
+          <span class="text-secondary font-bold">PAGE: LIVE</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="spiral-hole hidden md:block"></span>
+          <span class="spiral-hole hidden sm:block"></span>
+          <span class="spiral-hole"></span>
+          <span class="spiral-hole"></span>
+        </div>
+      </div>
+    </div>
+    <!-- SHARED COMPONENT: TopNavBar (Notebook Index Tabs Shell) -->
+    <header
+      class="sticky top-0 z-40 bg-surface dark:bg-surface-container border-b-2 border-primary dark:border-outline-variant shadow-[3px_3px_0px_#24211D] dark:shadow-[3px_3px_0px_#0d0a07]"
+    >
+      <div
+        class="flex justify-between items-center w-full px-margin-mobile md:px-margin max-w-7xl mx-auto py-space-sm"
+      >
+        <!-- Brand Logo / Sketchbook Name -->
+        <a class="flex items-center gap-2 group" href="#home">
+          <span
+            class="text-headline-md font-headline-md text-primary dark:text-inverse-primary tracking-tight font-caveat flex items-center gap-1.5 hover:-translate-y-0.5 hover:translate-x-0.5 transition-transform"
+          >
+            <span class="text-2xl">✎</span>
+            M Jayross Cruspero
+          </span>
+          <span
+            class="hidden sm:inline-block font-hand text-xs bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full border border-primary -rotate-2"
+          >
+            portfolio
+          </span>
+        </a>
+        <!-- Desktop Navigation Tabs (Styled as index page divider tabs) -->
+        <nav class="hidden md:flex items-center gap-6">
+          <a
+            class="text-secondary dark:text-secondary-fixed border-b-2 border-secondary dark:border-secondary-fixed font-label-lg text-label-lg pb-1 hover:-translate-y-0.5 hover:translate-x-0.5 hover:shadow-[1px_1px_0px_#24211D] transition-all duration-150"
+            href="#home"
+          >
+            Home
+          </a>
+          <a
+            class="text-on-surface-variant dark:text-outline-variant font-label-lg text-label-lg hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-secondary transition-all duration-150"
+            href="#about"
+          >
+            About
+          </a>
+          <a
+            class="text-on-surface-variant dark:text-outline-variant font-label-lg text-label-lg hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-secondary transition-all duration-150"
+            href="#skills"
+          >
+            Skills
+          </a>
+          <a
+            class="text-on-surface-variant dark:text-outline-variant font-label-lg text-label-lg hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-secondary transition-all duration-150"
+            href="#projects"
+          >
+            Projects
+          </a>
+          <a
+            class="text-on-surface-variant dark:text-outline-variant font-label-lg text-label-lg hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-secondary transition-all duration-150"
+            href="#education"
+          >
+            Education
+          </a>
+          <a
+            class="text-on-surface-variant dark:text-outline-variant font-label-lg text-label-lg hover:-translate-y-0.5 hover:translate-x-0.5 hover:text-secondary transition-all duration-150"
+            href="#contact"
+          >
+            Contact
+          </a>
+        </nav>
+        <!-- Trailing Action: Say Hello Button -->
+        <div class="flex items-center gap-3">
+          <a
+            class="sketch-btn bg-secondary-container text-on-secondary-container font-label-lg text-label-lg px-4 py-2 rounded-md flex items-center gap-1.5 hover:-translate-y-0.5 hover:translate-x-0.5 transition-all"
+            href="#contact"
+          >
+            <span>Say Hello</span>
+            <span class="text-sm">✉️</span>
+          </a>
+          <!-- Mobile Drawer Toggle Button -->
+          <button
+            aria-label="Toggle Navigation Drawer"
+            class="md:hidden sketch-btn bg-surface-container p-2 rounded-md text-primary flex items-center justify-center"
+            id="mobile-menu-btn"
+          >
+            <span class="material-symbols-outlined" data-icon="menu">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- SHARED COMPONENT: SideNavBar (Modal Drawer) for Mobile -->
+    <div
+      class="fixed inset-0 bg-primary/40 backdrop-blur-xs z-50 hidden transition-opacity"
+      id="drawer-backdrop"
+    ></div>
+    <aside
+      class="fixed top-0 left-0 bottom-0 z-50 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden docked left h-full border-r-2 border-primary dark:border-outline-variant shadow-[5px_5px_0px_#24211D] dark:shadow-[5px_5px_0px_#0d0a07] bg-surface-container-low dark:bg-surface-container"
+      id="side-nav-drawer"
+    >
+      <div class="flex flex-col justify-between h-full p-space-md w-72">
+        <!-- Drawer Header -->
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full border-2 border-primary bg-tertiary-fixed flex items-center justify-center font-caveat text-xl font-bold"
+              >
+                MJ
+              </div>
+              <div>
+                <p
+                  class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary leading-tight font-caveat"
+                >
+                  M Jayross Cruspero
+                </p>
+                <p class="text-xs font-kalam text-on-surface-variant">
+                  Sketchbook Portfolio
+                </p>
+              </div>
+            </div>
+            <button
+              aria-label="Close menu"
+              class="p-1 text-primary hover:text-secondary"
+              id="drawer-close-btn"
+            >
+              <span class="material-symbols-outlined" data-icon="close"
+                >close</span
+              >
+            </button>
           </div>
-<div class="bg-surface-container-lowest border-2 border-primary p-6 rounded-md shadow-[4px_4px_0px_#24211D] max-w-3xl rotate-[-0.5deg] hover:rotate-0 transition-transform">
-<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-<span class="font-kalam text-xs bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded border border-primary font-bold">
-                UNDERGRADUATE DEGREE PROGRAM
-              </span>
-<span class="font-hand text-sm text-on-surface-variant">Present • Current Student</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary">
-              Bachelor of Science in Information Technology (BSIT)
-            </h3>
-<p class="font-body-sm text-body-sm text-secondary font-bold mt-1">
-              Higher Education Institution • Department of Computing &amp; Information Sciences
-            </p>
-<div class="mt-4 pt-3 border-t border-dashed border-primary/30">
-<p class="font-label-md text-label-md text-primary font-bold mb-2">KEY COURSEWORK &amp; ACADEMIC EXPERIENCES:</p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-body-sm text-on-surface-variant">
-<div class="flex items-center gap-1.5">
-<span class="text-secondary font-bold font-caveat text-lg">✦</span>
-<span>Object-Oriented Programming (Java)</span>
-</div>
-<div class="flex items-center gap-1.5">
-<span class="text-secondary font-bold font-caveat text-lg">✦</span>
-<span>Data Structures &amp; Algorithms</span>
-</div>
-<div class="flex items-center gap-1.5">
-<span class="text-secondary font-bold font-caveat text-lg">✦</span>
-<span>Web Systems &amp; Technologies</span>
-</div>
-<div class="flex items-center gap-1.5">
-<span class="text-secondary font-bold font-caveat text-lg">✦</span>
-<span>Database Management Systems</span>
-</div>
-<div class="flex items-center gap-1.5">
-<span class="text-secondary font-bold font-caveat text-lg">✦</span>
-<span>UI/UX Design Fundamentals</span>
-</div>
-<div class="flex items-center gap-1.5">
-<span class="text-secondary font-bold font-caveat text-lg">✦</span>
-<span>Information Assurance &amp; Security</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Milestone 2: Foundational Tech Learning -->
-<div class="relative group">
-<!-- Pin on Timeline -->
-<div class="absolute -left-[35px] md:-left-[51px] top-1.5 w-7 h-7 rounded-full bg-secondary-container border-2 border-primary flex items-center justify-center font-caveat font-bold text-sm shadow-[2px_2px_0px_#24211D]">
-            02
+          <!-- Tab Items -->
+          <nav class="flex flex-col gap-2">
+            <a
+              class="flex items-center gap-space-sm bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-lg px-space-md py-space-sm font-label-lg text-label-lg border border-primary dark:border-outline-variant shadow-[2px_2px_0px_#24211D] drawer-link"
+              href="#home"
+            >
+              <span class="material-symbols-outlined text-xl" data-icon="home"
+                >home</span
+              >
+              <span>Home</span>
+            </a>
+            <a
+              class="flex items-center gap-space-sm text-on-surface-variant dark:text-outline-variant px-space-md py-space-sm font-label-lg text-label-lg hover:bg-surface-variant rounded-lg transition-colors drawer-link"
+              href="#about"
+            >
+              <span class="material-symbols-outlined text-xl" data-icon="person"
+                >person</span
+              >
+              <span>About</span>
+            </a>
+            <a
+              class="flex items-center gap-space-sm text-on-surface-variant dark:text-outline-variant px-space-md py-space-sm font-label-lg text-label-lg hover:bg-surface-variant rounded-lg transition-colors drawer-link"
+              href="#skills"
+            >
+              <span class="material-symbols-outlined text-xl" data-icon="draw"
+                >draw</span
+              >
+              <span>Skills</span>
+            </a>
+            <a
+              class="flex items-center gap-space-sm text-on-surface-variant dark:text-outline-variant px-space-md py-space-sm font-label-lg text-label-lg hover:bg-surface-variant rounded-lg transition-colors drawer-link"
+              href="#projects"
+            >
+              <span
+                class="material-symbols-outlined text-xl"
+                data-icon="folder_open"
+                >folder_open</span
+              >
+              <span>Projects</span>
+            </a>
+            <a
+              class="flex items-center gap-space-sm text-on-surface-variant dark:text-outline-variant px-space-md py-space-sm font-label-lg text-label-lg hover:bg-surface-variant rounded-lg transition-colors drawer-link"
+              href="#education"
+            >
+              <span class="material-symbols-outlined text-xl" data-icon="school"
+                >school</span
+              >
+              <span>Education</span>
+            </a>
+            <a
+              class="flex items-center gap-space-sm text-on-surface-variant dark:text-outline-variant px-space-md py-space-sm font-label-lg text-label-lg hover:bg-surface-variant rounded-lg transition-colors drawer-link"
+              href="#contact"
+            >
+              <span class="material-symbols-outlined text-xl" data-icon="mail"
+                >mail</span
+              >
+              <span>Contact</span>
+            </a>
+          </nav>
+        </div>
+        <!-- Drawer Footer Action -->
+        <div class="pt-4 border-t-2 border-dashed border-primary">
+          <a
+            class="w-full sketch-btn bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg py-2 rounded-md flex items-center justify-center gap-2 mb-3 drawer-link"
+            href="#contact"
+          >
+            <span>Leave a Note</span>
+            <span>✍️</span>
+          </a>
+          <div
+            class="flex justify-around text-xs text-on-surface-variant font-kalam"
+          >
+            <a
+              class="flex items-center gap-1 hover:text-secondary drawer-link"
+              href="#about"
+            >
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="auto_stories"
+                >auto_stories</span
+              >
+              Guestbook
+            </a>
+            <a
+              class="flex items-center gap-1 hover:text-secondary drawer-link"
+              href="#footer"
+            >
+              <span class="material-symbols-outlined text-sm" data-icon="info"
+                >info</span
+              >
+              Colophon
+            </a>
           </div>
-<div class="bg-surface-container-lowest border-2 border-primary p-6 rounded-md shadow-[4px_4px_0px_#24211D] max-w-3xl rotate-[0.5deg] hover:rotate-0 transition-transform">
-<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
-<span class="font-kalam text-xs bg-surface-container-high text-primary px-2.5 py-0.5 rounded border border-primary font-bold">
-                EARLY EXPLORATION &amp; SELF-STUDY
+        </div>
+      </div>
+    </aside>
+    <!-- MAIN CANVAS CONTAINER -->
+    <main
+      class="max-w-7xl mx-auto px-4 sm:px-6 md:px-margin py-8 md:py-12 space-y-20 md:space-y-28"
+    >
+      <!-- ========================================== -->
+      <!-- SECTION 1: HERO / PAGE 01 (COVER & INTRO)  -->
+      <!-- ========================================== -->
+      <section class="relative pt-4 pb-8" id="home">
+        <!-- Notebook Page Marker / Flag -->
+        <div class="inline-flex items-center gap-2 mb-6">
+          <span
+            class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 font-kalam text-sm font-bold sketch-border rotate-[-1deg] shadow-[2px_2px_0px_#24211D]"
+          >
+            PAGE 01 // COVER &amp; INTRO
+          </span>
+          <span class="text-xs font-hand text-on-surface-variant"
+            >Vol. 2025 • Student Folio</span
+          >
+        </div>
+        <!-- Hero Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Left: Intro Typography & Doodles -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="relative">
+              <!-- Hand-drawn Star Doodle Top Left -->
+              <svg
+                class="w-8 h-8 text-tertiary absolute -top-8 -left-4 animate-pulse"
+                fill="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l2.4 6.8H21l-5.6 4.3 2.1 6.9-5.5-4.1-5.5 4.1 2.1-6.9L3 8.8h6.6z"
+                ></path>
+              </svg>
+              <!-- Main Heading with handwriting feel -->
+              <h1
+                class="text-headline-xl-mobile md:text-headline-xl font-headline-xl text-primary leading-tight"
+              >
+                Hey, I'm
+                <span
+                  class="font-caveat text-5xl md:text-6xl text-secondary font-bold inline-block hover:scale-105 transition-transform cursor-pointer"
+                  >Jayross!</span
+                >
+              </h1>
+              <!-- Wavy Underline SVG -->
+              <div class="w-48 sm:w-64 -mt-1 mb-4">
+                <svg
+                  class="w-full text-secondary stroke-current stroke-[3]"
+                  fill="none"
+                  viewbox="0 0 260 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 14C35 4 65 18 97 12C129 6 159 18 191 12C223 6 245 15 257 11"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <!-- Subtitle with soft yellow highlighter effect -->
+            <div class="inline-block relative">
+              <span
+                class="absolute inset-0 bg-tertiary-fixed/60 -rotate-1 rounded-sm transform scale-y-90"
+              ></span>
+              <p
+                class="relative font-kalam text-lg sm:text-xl font-bold text-on-tertiary-fixed px-3 py-1"
+              >
+                IT Student • Aspiring Developer • Tech Enthusiast
+              </p>
+            </div>
+            <!-- Paragraph text -->
+            <p
+              class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed"
+            >
+              I'm a college student passionate about technology, programming,
+              and creating digital solutions. I enjoy exploring new ideas,
+              learning new technologies, and turning concepts into functional
+              projects.
+            </p>
+            <!-- Annotations & CTA Button Group -->
+            <div class="pt-4 space-y-4">
+              <div class="flex flex-wrap items-center gap-4">
+                <a
+                  class="sketch-btn bg-secondary text-on-secondary font-label-lg text-label-lg px-6 py-3.5 rounded-lg flex items-center gap-2 group"
+                  href="#projects"
+                >
+                  <span>Explore My Work</span>
+                  <span
+                    class="font-caveat text-xl group-hover:rotate-12 transition-transform"
+                    >✎</span
+                  >
+                </a>
+                <a
+                  class="sketch-btn bg-surface-container-low text-primary font-label-lg text-label-lg px-6 py-3.5 rounded-lg flex items-center gap-2 group"
+                  href="#contact"
+                >
+                  <span>Say Hello!</span>
+                  <span
+                    class="text-base group-hover:translate-x-1 transition-transform"
+                    >✉</span
+                  >
+                </a>
+              </div>
+              <!-- Hand-drawn arrow annotation -->
+              <div
+                class="flex items-center gap-2 pt-2 text-on-surface-variant font-caveat text-xl"
+              >
+                <svg
+                  class="w-6 h-6 rotate-12 text-secondary stroke-current fill-none stroke-[2]"
+                  viewbox="0 0 24 24"
+                >
+                  <path d="M4 4c6 2 12 8 14 14m0 0l-5-1m5 1l-1-5"></path>
+                </svg>
+                <span>Check out my practical builds below! ✦</span>
+              </div>
+            </div>
+            <!-- Margin Quick Fact Badge -->
+            <div
+              class="pt-2 flex items-center gap-4 text-xs font-hand text-on-surface-variant"
+            >
+              <span
+                class="bg-surface-variant px-3 py-1 rounded-full border border-primary/40 flex items-center gap-1"
+              >
+                ☕ Powered by Coffee &amp; Curiosity
               </span>
-<span class="font-hand text-sm text-on-surface-variant">Foundational Stage</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary">
-              Foundational Tech Learning &amp; Practical Exploration
-            </h3>
-<p class="font-body-sm text-body-sm text-secondary font-bold mt-1">
-              Independent Experimentation &amp; Practical Workshops
-            </p>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed">
-              Before formal university classes, I explored hardware building, software installation, fundamental script logic, and the mechanics of user interfaces. This innate curiosity feeds my everyday drive to solve practical IT challenges.
-            </p>
-<div class="mt-4 flex flex-wrap gap-2">
-<span class="font-hand text-xs bg-surface-container px-2 py-0.5 border border-primary rounded">Computer Assembly</span>
-<span class="font-hand text-xs bg-surface-container px-2 py-0.5 border border-primary rounded">Network Basics</span>
-<span class="font-hand text-xs bg-surface-container px-2 py-0.5 border border-primary rounded">Self-Directed Coding</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ========================================== -->
-<!-- SECTION 6: CONTACT / PAGE 06               -->
-<!-- ========================================== -->
-<section class="relative pt-6" id="contact">
-<!-- Section Divider -->
-<div class="flex items-center gap-4 mb-8">
-<span class="bg-surface-container-high text-primary px-3 py-1 font-kalam text-sm font-bold sketch-border -rotate-1 shadow-[2px_2px_0px_#24211D]">
-          PAGE 06 // LET'S CONNECT!
-        </span>
-<div class="h-0.5 flex-1 border-t-2 border-dashed border-primary"></div>
-</div>
-<!-- Section Title -->
-<div class="mb-10 text-center max-w-2xl mx-auto">
-<h2 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary">
-          Let's Connect!
-        </h2>
-<p class="font-kalam text-secondary text-lg mt-2">
-          "Got a student collaboration, feedback on a project, or just want to chat about tech? Drop a line!"
-        </p>
-</div>
-<!-- Contact Layout: Memo Pad & Contact Form -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<!-- Left: Handwritten Memo Note & Socials -->
-<div class="lg:col-span-5 space-y-6">
-<div class="relative bg-surface-container-low border-2 border-primary p-6 rounded-md shadow-[5px_5px_0px_#24211D] rotate-[-1deg]">
-<div class="absolute -top-3 left-1/4 w-24 h-6 washi-tape"></div>
-<h3 class="font-caveat text-3xl font-bold text-primary mb-2">
-              Stationery Memo ✉
-            </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
-              I am always happy to connect with fellow IT peers, instructors, and potential mentors. You can reach out directly via:
-            </p>
-<!-- Social Links / Polaroids -->
-<div class="space-y-3 font-body-sm text-body-sm">
-<a class="p-3 bg-surface-container-lowest border-2 border-primary rounded flex items-center justify-between hover:bg-secondary-container transition-colors group" href="mailto:crusperomjayross@gmail.com">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary" data-icon="mail">mail</span>
-<div>
-<span class="font-bold text-primary block text-xs font-label-md">EMAIL ADDRESS</span>
-<span class="text-xs text-on-surface-variant font-kalam">crusperomjayross@gmail.com</span>
-</div>
-</div>
-<span class="font-caveat text-base group-hover:translate-x-1 transition-transform">↗</span>
-</a>
-<a class="p-3 bg-surface-container-lowest border-2 border-primary rounded flex items-center justify-between hover:bg-secondary-container transition-colors group" href="https://github.com" rel="noopener noreferrer" target="_blank">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary" data-icon="code">code</span>
-<div>
-<span class="font-bold text-primary block text-xs font-label-md">GITHUB</span>
-<span class="text-xs text-on-surface-variant font-kalam">github.com/mjayross</span>
-</div>
-</div>
-<span class="font-caveat text-base group-hover:translate-x-1 transition-transform">↗</span>
-</a>
-<a class="p-3 bg-surface-container-lowest border-2 border-primary rounded flex items-center justify-between hover:bg-secondary-container transition-colors group" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary" data-icon="person">person</span>
-<div>
-<span class="font-bold text-primary block text-xs font-label-md">LINKEDIN</span>
-<span class="text-xs text-on-surface-variant font-kalam">linkedin.com/in/mjayross</span>
-</div>
-</div>
-<span class="font-caveat text-base group-hover:translate-x-1 transition-transform">↗</span>
-</a>
-<a class="p-3 bg-surface-container-lowest border-2 border-primary rounded flex items-center justify-between hover:bg-secondary-container transition-colors group" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary" data-icon="share">share</span>
-<div>
-<span class="font-bold text-primary block text-xs font-label-md">FACEBOOK</span>
-<span class="text-xs text-on-surface-variant font-kalam">M Jayross Cruspero</span>
-</div>
-</div>
-<span class="font-caveat text-base group-hover:translate-x-1 transition-transform">↗</span>
-</a>
-</div>
-<!-- Hand-drawn stamp footer note -->
-<div class="mt-6 pt-4 border-t-2 border-dashed border-primary text-center">
-<span class="font-hand text-xs text-on-surface-variant bg-surface-variant px-3 py-1 rounded-full border border-primary/40">
-                Response time: usually within 24-48 hours ⚡
+              <span
+                class="hidden sm:inline-block bg-surface-variant px-3 py-1 rounded-full border border-primary/40"
+              >
+                📍 Davao City / Philippines
               </span>
-</div>
-</div>
-</div>
-<!-- Right: Hand-drawn Contact Form on Yellow Legal Ruled Pad -->
-<div class="lg:col-span-7">
-<div class="relative bg-[#FEF9C3] border-2 border-primary p-6 md:p-8 rounded-md shadow-[6px_6px_0px_#24211D] rotate-[0.5deg]">
-<!-- Red margin rule on legal pad -->
-<div class="absolute top-0 bottom-0 left-10 w-0.5 bg-red-300 pointer-events-none hidden sm:block"></div>
-<!-- Sticky tape at top -->
-<div class="absolute -top-3 right-1/3 w-28 h-6 washi-tape-sage"></div>
-<div class="sm:pl-8">
-<div class="flex items-center justify-between border-b-2 border-primary pb-3 mb-6">
-<div>
-<h3 class="font-caveat text-3xl font-bold text-primary">
-                    Leave a Message Note 📝
-                  </h3>
-<p class="font-kalam text-xs text-on-surface-variant">Pen your message directly onto this digital pad</p>
-</div>
-<span class="font-hand text-xs bg-primary text-on-primary px-2 py-1 rounded">Pad #01</span>
-</div>
-<!-- Interactive Form -->
-<form class="space-y-6" id="sketch-contact-form">
-<!-- Name Field with pencil stroke underline -->
-<div>
-<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="contact-name">
-                    YOUR NAME:
-                  </label>
-<input class="w-full bg-transparent border-0 border-b-2 border-primary px-1 py-2 text-primary font-body-md focus:ring-0 focus:border-secondary transition-colors placeholder:text-on-surface-variant/50" id="contact-name" placeholder="e.g. Alex Santos" required="" type="text"/>
-</div>
-<!-- Email Field with pencil stroke underline -->
-<div>
-<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="contact-email">
-                    YOUR EMAIL:
-                  </label>
-<input class="w-full bg-transparent border-0 border-b-2 border-primary px-1 py-2 text-primary font-body-md focus:ring-0 focus:border-secondary transition-colors placeholder:text-on-surface-variant/50" id="contact-email" placeholder="e.g. alex@example.com" required="" type="email"/>
-</div>
-<!-- Subject Field with pencil stroke underline -->
-<div>
-<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="contact-subject">
-                    SUBJECT / TOPIC:
-                  </label>
-<input class="w-full bg-transparent border-0 border-b-2 border-primary px-1 py-2 text-primary font-body-md focus:ring-0 focus:border-secondary transition-colors placeholder:text-on-surface-variant/50" id="contact-subject" placeholder="e.g. Student collaboration or Project inquiry" required="" type="text"/>
-</div>
-<!-- Message Field with ruled paper lines -->
-<div>
-<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="contact-message">
-                    MESSAGE:
-                  </label>
-<textarea class="w-full bg-transparent border-2 border-primary rounded p-3 text-primary font-body-md bg-ruled-paper focus:ring-0 focus:border-secondary transition-colors placeholder:text-on-surface-variant/50 resize-y" id="contact-message" placeholder="Write your note here..." required="" rows="5"></textarea>
-</div>
-<!-- Submit Button -->
-<div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
-<button class="w-full sm:w-auto sketch-btn bg-secondary text-on-secondary font-label-lg text-label-lg px-8 py-3.5 rounded flex items-center justify-center gap-2 group" type="submit">
-<span>Send Message</span>
-<span class="text-base group-hover:translate-x-1 transition-transform">✉️</span>
-</button>
-<span class="font-hand text-xs text-on-surface-variant">
-                    ✍ Instant Ink &amp; Paper Delivery
-                  </span>
-</div>
-</form>
-<!-- Client-side notification banner (Hidden by default) -->
-<div class="mt-6 p-4 bg-secondary-container border-2 border-primary rounded-md hidden animate-fadeIn shadow-[3px_3px_0px_#24211D]" id="form-success-banner">
-<div class="flex items-center gap-3">
-<span class="text-2xl">🎉</span>
-<div>
-<h4 class="font-caveat text-xl font-bold text-primary">Message Received!</h4>
-<p class="font-kalam text-xs text-on-surface-variant">
-                      Thank you for reaching out! Jayross has saved your scribble and will reply shortly.
+            </div>
+          </div>
+          <!-- Right: Polaroid Sketch Photo & Tape Accents -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div
+              class="relative w-full max-w-sm rotate-2 hover:rotate-0 transition-transform duration-300"
+            >
+              <!-- Washi tape at top of polaroid -->
+              <div
+                class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-28 h-7 washi-tape z-10 -rotate-2"
+              ></div>
+              <!-- Polaroid Frame Card -->
+              <div
+                class="bg-surface-container-lowest border-2 border-primary p-4 pb-6 shadow-[5px_5px_0px_#24211D] rounded-sm"
+              >
+                <!-- Image Container -->
+                <div
+                  class="relative w-full aspect-square bg-surface-variant border-2 border-primary/80 overflow-hidden mb-4"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    data-alt="A warm, candid creative photograph of a young Southeast Asian male IT student at a wooden desk with a laptop, an open paper sketchbook with hand-drawn system diagrams, and a steaming coffee mug. Soft morning sunlight streams into the cozy room, creating natural warm cream and earth tones. The aesthetic is authentic, studious, and tactile."
+                    src="formal cruspero.png"
+                  />
+                  <!-- Hand-sketched corner accent -->
+                  <div
+                    class="absolute bottom-2 right-2 font-hand text-xs bg-surface-container/90 px-2 py-0.5 border border-primary rounded"
+                  >
+                    snap.2025
+                  </div>
+                </div>
+                <!-- Polaroid Handwritten Caption -->
+                <div
+                  class="text-center font-caveat text-xl text-primary font-bold tracking-wide"
+                >
+                  "Me working on code &amp; coffee ☕"
+                </div>
+                <div
+                  class="mt-2 text-center text-xs font-kalam text-on-surface-variant"
+                >
+                  BSIT Student // Crafting Digital Ideas
+                </div>
+              </div>
+              <!-- Sticky Note Attached to Polaroid Corner -->
+              <div
+                class="absolute -bottom-6 -left-6 bg-tertiary-fixed text-on-tertiary-fixed p-3 border-2 border-primary shadow-[3px_3px_0px_#24211D] rotate-[-6deg] w-36"
+              >
+                <p class="font-caveat text-base font-bold leading-tight">
+                  "Small steps every day = big code milestones!"
+                </p>
+              </div>
+              <!-- Paperclip decoration -->
+              <div
+                class="absolute -top-2 right-6 w-5 h-10 border-2 border-outline rounded-full -rotate-12 pointer-events-none"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================================== -->
+      <!-- SECTION 2: ABOUT ME / PAGE 02              -->
+      <!-- ========================================== -->
+      <section class="relative pt-6" id="about">
+        <!-- Section Divider -->
+        <div class="flex items-center gap-4 mb-8">
+          <span
+            class="bg-secondary-container text-on-secondary-container px-3 py-1 font-kalam text-sm font-bold sketch-border rotate-1 shadow-[2px_2px_0px_#24211D]"
+          >
+            PAGE 02 // A LITTLE ABOUT ME
+          </span>
+          <div
+            class="h-0.5 flex-1 border-t-2 border-dashed border-primary"
+          ></div>
+        </div>
+        <!-- Section Headline -->
+        <div class="mb-10">
+          <h2
+            class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary flex items-center gap-3"
+          >
+            <span>A Little About Me</span>
+            <span class="font-caveat text-secondary text-3xl hidden sm:inline"
+              >🌿 [Who I Am]</span
+            >
+          </h2>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-2"
+          >
+            An IT student eager to bridge theoretical foundations with everyday
+            utility. Continuously improving skills through academic projects,
+            team collaborations, and hands-on experimentation.
+          </p>
+        </div>
+        <!-- Scrapbook Grid: Sticky Notes & Memo Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-start">
+          <!-- Sticky-Note Card 1: Personal Info (Yellow note) -->
+          <div
+            class="relative bg-tertiary-fixed/90 text-on-tertiary-fixed p-6 border-2 border-primary shadow-[4px_4px_0px_#24211D] rotate-[-1.5deg] hover:rotate-0 transition-transform duration-200"
+          >
+            <!-- Tape overlay -->
+            <div class="absolute -top-3 left-1/3 w-20 h-6 washi-tape"></div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-caveat text-2xl font-bold text-primary"
+                >📌 Personal Info</span
+              >
+              <span
+                class="font-hand text-xs bg-surface-lowest px-2 py-0.5 border border-primary rounded"
+                >Profile</span
+              >
+            </div>
+            <ul class="space-y-3 font-body-sm text-body-sm text-primary">
+              <li>
+                <strong
+                  class="font-label-md text-label-md block text-on-surface-variant font-bold"
+                  >NAME:</strong
+                >
+                <span class="font-bold text-base">M Jayross Cruspero</span>
+              </li>
+              <li>
+                <strong
+                  class="font-label-md text-label-md block text-on-surface-variant font-bold"
+                  >ROLE:</strong
+                >
+                <span>Student Developer</span>
+              </li>
+              <li>
+                <strong
+                  class="font-label-md text-label-md block text-on-surface-variant font-bold"
+                  >DEGREE PROGRAM:</strong
+                >
+                <span>Bachelor of Science in Information Technology</span>
+              </li>
+              <li>
+                <strong
+                  class="font-label-md text-label-md block text-on-surface-variant font-bold"
+                  >AREAS OF PASSION:</strong
+                >
+                <span
+                  >Programming, Web Development, UI/UX Design, and Systems
+                  Logic</span
+                >
+              </li>
+            </ul>
+            <!-- Folded bottom corner effect -->
+            <div
+              class="mt-6 pt-3 border-t border-primary/30 flex justify-between items-center text-xs font-kalam"
+            >
+              <span>Status: Actively Learning</span>
+              <span>✦ 2025</span>
+            </div>
+          </div>
+          <!-- Sticky-Note Card 2: My Philosophy (Sage Green Note) -->
+          <div
+            class="relative bg-secondary-container text-on-secondary-container p-6 border-2 border-primary shadow-[4px_4px_0px_#24211D] rotate-[1.5deg] hover:rotate-0 transition-transform duration-200"
+          >
+            <!-- Washi tape sage overlay -->
+            <div
+              class="absolute -top-3 right-1/4 w-20 h-6 washi-tape-sage"
+            ></div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-caveat text-2xl font-bold text-primary"
+                >🌱 My Philosophy</span
+              >
+              <span class="material-symbols-outlined text-xl" data-icon="draw"
+                >draw</span
+              >
+            </div>
+            <div class="py-4">
+              <p
+                class="font-caveat text-2xl text-primary font-bold leading-snug"
+              >
+                "Turning curious ideas into clean code, one notebook scribble at
+                a time."
+              </p>
+            </div>
+            <p
+              class="font-body-sm text-body-sm text-on-surface leading-relaxed mt-2"
+            >
+              I believe good software begins with clear sketching and active
+              listening. Before typing a single bracket, I sketch workflows and
+              break complex requirements into human-friendly steps.
+            </p>
+            <div
+              class="mt-6 pt-3 border-t border-primary/30 flex justify-between items-center font-hand text-xs"
+            >
+              <span>Craft over shortcuts</span>
+              <span>Iterate constantly</span>
+            </div>
+          </div>
+          <!-- Sticky-Note Card 3: Current Focus (Kraft Paper Note) -->
+          <div
+            class="relative bg-surface-variant text-on-surface p-6 border-2 border-primary shadow-[4px_4px_0px_#24211D] rotate-[-1deg] hover:rotate-0 transition-transform duration-200"
+          >
+            <!-- Pushpin circle doodle top center -->
+            <div
+              class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-error border-2 border-primary shadow-sm flex items-center justify-center"
+            >
+              <div class="w-1.5 h-1.5 bg-surface rounded-full"></div>
+            </div>
+            <div class="flex items-center justify-between mb-4 mt-1">
+              <span class="font-caveat text-2xl font-bold text-primary"
+                >🎯 Current Focus</span
+              >
+              <span
+                class="font-hand text-xs bg-surface-container-high px-2 py-0.5 border border-primary rounded"
+                >In-Progress</span
+              >
+            </div>
+            <div class="space-y-3 font-body-sm text-body-sm">
+              <div class="flex items-start gap-2">
+                <span class="text-secondary font-bold font-caveat text-xl"
+                  >✓</span
+                >
+                <p>
+                  Building practical student management and database
+                  applications.
+                </p>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-secondary font-bold font-caveat text-xl"
+                  >✓</span
+                >
+                <p>
+                  Honing front-end layout craftsmanship with semantic HTML and
+                  responsive CSS.
+                </p>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-secondary font-bold font-caveat text-xl"
+                  >✓</span
+                >
+                <p>
+                  Exploring accessible, delightful UI/UX design prototypes in
+                  Figma.
+                </p>
+              </div>
+            </div>
+            <!-- Hand-drawn Lightbulb Tip -->
+            <div
+              class="mt-6 p-2.5 bg-surface-container-low border border-dashed border-primary rounded flex items-center gap-2"
+            >
+              <span class="text-xl">💡</span>
+              <p class="font-hand text-xs text-primary leading-tight">
+                Tip: Clean variable naming saves hours of late-night debugging!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================================== -->
+      <!-- SECTION 3: SKILLS / PAGE 03                -->
+      <!-- ========================================== -->
+      <section class="relative pt-6" id="skills">
+        <!-- Section Divider -->
+        <div class="flex items-center gap-4 mb-8">
+          <span
+            class="bg-surface-variant text-primary px-3 py-1 font-kalam text-sm font-bold sketch-border -rotate-1 shadow-[2px_2px_0px_#24211D]"
+          >
+            PAGE 03 // THINGS I'M LEARNING
+          </span>
+          <div
+            class="h-0.5 flex-1 border-t-2 border-dashed border-primary"
+          ></div>
+        </div>
+        <!-- Section Title & Authentic Stamp -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10"
+        >
+          <div>
+            <h2
+              class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary"
+            >
+              Things I'm Learning
+            </h2>
+            <p class="font-kalam text-secondary text-base md:text-lg mt-1">
+              "No fake percentages here — just honest technologies and tools I
+              actively practice and explore!"
+            </p>
+          </div>
+          <!-- Hand-drawn stamp badge -->
+          <div
+            class="inline-block border-2 border-dashed border-secondary bg-secondary-fixed/50 px-3 py-1.5 rounded rotate-3 self-start sm:self-auto"
+          >
+            <p
+              class="font-kalam text-xs font-bold text-on-secondary-fixed text-center"
+            >
+              ★ VERIFIED WORK-IN-PROGRESS ★
+            </p>
+          </div>
+        </div>
+        <!-- Skills 3-Column Bento Notebook Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Category 1: Programming Foundations -->
+          <div
+            class="bg-surface-container-lowest border-2 border-primary p-6 rounded-md shadow-[4px_4px_0px_#24211D]"
+          >
+            <div
+              class="flex items-center justify-between border-b-2 border-primary/20 pb-3 mb-5"
+            >
+              <div class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-secondary text-2xl"
+                  data-icon="terminal"
+                  >terminal</span
+                >
+                <h3 class="font-headline-sm text-headline-sm text-primary">
+                  Programming
+                </h3>
+              </div>
+              <span
+                class="font-hand text-xs bg-surface-container px-2 py-0.5 rounded border border-primary/30"
+                >Code</span
+              >
+            </div>
+            <div class="space-y-4">
+              <!-- Java -->
+              <div
+                class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors"
+              >
+                <div class="flex justify-between items-center mb-1">
+                  <span
+                    class="font-bold text-primary font-headline-sm text-base"
+                    >Java</span
+                  >
+                  <span
+                    class="font-hand text-xs bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded border border-primary"
+                    >Core Focus</span
+                  >
+                </div>
+                <p class="text-xs text-on-surface-variant font-body-sm">
+                  Object-Oriented Programming, linked list data structures,
+                  console utilities &amp; foundational algorithmic logic.
+                </p>
+              </div>
+              <!-- HTML -->
+              <div
+                class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors"
+              >
+                <div class="flex justify-between items-center mb-1">
+                  <span
+                    class="font-bold text-primary font-headline-sm text-base"
+                    >HTML5</span
+                  >
+                  <span
+                    class="font-hand text-xs bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded border border-primary"
+                    >Daily Practice</span
+                  >
+                </div>
+                <p class="text-xs text-on-surface-variant font-body-sm">
+                  Semantic web structuring, clean markup, accessibility
+                  principles, and document outlines.
+                </p>
+              </div>
+              <!-- CSS -->
+              <div
+                class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors"
+              >
+                <div class="flex justify-between items-center mb-1">
+                  <span
+                    class="font-bold text-primary font-headline-sm text-base"
+                    >CSS3 &amp; Styling</span
+                  >
+                  <span
+                    class="font-hand text-xs bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded border border-primary"
+                    >Responsive</span
+                  >
+                </div>
+                <p class="text-xs text-on-surface-variant font-body-sm">
+                  Flexbox layouts, CSS Grid, media queries, tactile shadow
+                  styling, and theme systems.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Category 2: Tools & Workflow -->
+          <div
+            class="bg-surface-container-lowest border-2 border-primary p-6 rounded-md shadow-[4px_4px_0px_#24211D]"
+          >
+            <div
+              class="flex items-center justify-between border-b-2 border-primary/20 pb-3 mb-5"
+            >
+              <div class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-secondary text-2xl"
+                  data-icon="build"
+                  >build</span
+                >
+                <h3 class="font-headline-sm text-headline-sm text-primary">
+                  Tools &amp; IDEs
+                </h3>
+              </div>
+              <span
+                class="font-hand text-xs bg-surface-container px-2 py-0.5 rounded border border-primary/30"
+                >Gear</span
+              >
+            </div>
+            <div class="space-y-4">
+              <!-- VS Code -->
+              <div
+                class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors"
+              >
+                <div class="flex justify-between items-center mb-1">
+                  <span
+                    class="font-bold text-primary font-headline-sm text-base"
+                    >VS Code</span
+                  >
+                  <span
+                    class="font-hand text-xs bg-surface-container-high px-2 py-0.5 rounded border border-primary"
+                    >Primary Editor</span
+                  >
+                </div>
+                <p class="text-xs text-on-surface-variant font-body-sm">
+                  Front-end experimentation, extensions configuration, markdown
+                  notes, and quick prototyping.
+                </p>
+              </div>
+              <!-- NetBeans -->
+              <div
+                class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors"
+              >
+                <div class="flex justify-between items-center mb-1">
+                  <span
+                    class="font-bold text-primary font-headline-sm text-base"
+                    >NetBeans IDE</span
+                  >
+                  <span
+                    class="font-hand text-xs bg-surface-container-high px-2 py-0.5 rounded border border-primary"
+                    >Academic IDE</span
+                  >
+                </div>
+                <p class="text-xs text-on-surface-variant font-body-sm">
+                  Java project compilation, console debugging, and data
+                  structure laboratory exercises.
+                </p>
+              </div>
+              <!-- Figma -->
+              <div
+                class="p-3 bg-surface-container-low border border-primary rounded hover:bg-surface-container transition-colors"
+              >
+                <div class="flex justify-between items-center mb-1">
+                  <span
+                    class="font-bold text-primary font-headline-sm text-base"
+                    >Figma</span
+                  >
+                  <span
+                    class="font-hand text-xs bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded border border-primary"
+                    >Design &amp; UI</span
+                  >
+                </div>
+                <p class="text-xs text-on-surface-variant font-body-sm">
+                  Low-fidelity sketches, wireframing user journeys, component
+                  libraries, and interactive page mockups.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Category 3: Technical Interests & Horizons -->
+          <div
+            class="bg-surface-container-lowest border-2 border-primary p-6 rounded-md shadow-[4px_4px_0px_#24211D]"
+          >
+            <div
+              class="flex items-center justify-between border-b-2 border-primary/20 pb-3 mb-5"
+            >
+              <div class="flex items-center gap-2">
+                <span
+                  class="material-symbols-outlined text-secondary text-2xl"
+                  data-icon="explore"
+                  >explore</span
+                >
+                <h3 class="font-headline-sm text-headline-sm text-primary">
+                  Interests
+                </h3>
+              </div>
+              <span
+                class="font-hand text-xs bg-surface-container px-2 py-0.5 rounded border border-primary/30"
+                >Curiosity</span
+              >
+            </div>
+            <div class="space-y-3 font-body-sm text-body-sm">
+              <div
+                class="p-2.5 bg-surface-container-low border border-dashed border-primary rounded flex items-center gap-3"
+              >
+                <span class="text-xl">🌐</span>
+                <div>
+                  <strong class="font-bold text-primary block text-sm"
+                    >Web Development</strong
+                  >
+                  <span class="text-xs text-on-surface-variant"
+                    >Semantic web solutions &amp; creative frontend
+                    styling</span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-2.5 bg-surface-container-low border border-dashed border-primary rounded flex items-center gap-3"
+              >
+                <span class="text-xl">🎨</span>
+                <div>
+                  <strong class="font-bold text-primary block text-sm"
+                    >UI/UX Design</strong
+                  >
+                  <span class="text-xs text-on-surface-variant"
+                    >Human-centered layouts &amp; responsive visual
+                    interfaces</span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-2.5 bg-surface-container-low border border-dashed border-primary rounded flex items-center gap-3"
+              >
+                <span class="text-xl">🗄️</span>
+                <div>
+                  <strong class="font-bold text-primary block text-sm"
+                    >Database Management</strong
+                  >
+                  <span class="text-xs text-on-surface-variant"
+                    >Relational schemas, SQL queries &amp; data integrity</span
+                  >
+                </div>
+              </div>
+              <div
+                class="p-2.5 bg-surface-container-low border border-dashed border-primary rounded flex items-center gap-3"
+              >
+                <span class="text-xl">⚙️</span>
+                <div>
+                  <strong class="font-bold text-primary block text-sm"
+                    >Computer Hardware</strong
+                  >
+                  <span class="text-xs text-on-surface-variant"
+                    >System components, troubleshooting &amp; computer
+                    setup</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================================== -->
+      <!-- SECTION 4: PROJECTS / PAGE 04              -->
+      <!-- ========================================== -->
+      <section class="relative pt-6" id="projects">
+        <!-- Section Divider -->
+        <div class="flex items-center gap-4 mb-8">
+          <span
+            class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 font-kalam text-sm font-bold sketch-border rotate-1 shadow-[2px_2px_0px_#24211D]"
+          >
+            PAGE 04 // STUFF I'VE BUILT
+          </span>
+          <div
+            class="h-0.5 flex-1 border-t-2 border-dashed border-primary"
+          ></div>
+        </div>
+        <!-- Section Headline & Doodle Banner -->
+        <div
+          class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4"
+        >
+          <div>
+            <h2
+              class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary flex items-center gap-3"
+            >
+              <span>Stuff I've Built</span>
+              <span class="font-caveat text-secondary text-2xl hidden sm:inline"
+                >📂 [Project Folio]</span
+              >
+            </h2>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1"
+            >
+              Academic projects, prototype experiments, and console software
+              created with attention to detail and practical usability.
+            </p>
+          </div>
+          <div class="font-caveat text-base text-on-surface-variant">
+            Tap cards to examine details ↘
+          </div>
+        </div>
+        <!-- Projects Grid: Scrapbook Cards with Organic Tilts -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- PROJECT 01: PRESERVA -->
+          <article
+            class="relative bg-surface-container-lowest border-2 border-primary p-5 rounded-md shadow-[5px_5px_0px_#24211D] rotate-[-1deg] hover:rotate-0 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+          >
+            <!-- Washi tape at top -->
+            <div
+              class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-28 h-6 washi-tape-sage z-10"
+            ></div>
+            <div>
+              <!-- Thumbnail Visual -->
+              <div
+                class="relative w-full aspect-video bg-surface-variant border-2 border-primary overflow-hidden rounded mb-4"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="A clean, modern web interface mockup design for Preserva, a fresh produce surplus marketplace. The screen displays a warm, earthy color scheme with green and cream tones, showing local farm produce, price discount tags, and vendor stall cards in an organized card grid. Hand-drawn wireframe pencil sketches border the digital interface."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3foxxZAsxzvKbExyWRnR-IUb6TspKIgsXMRBfWCEWPNxh5WqQL6j7sfG4oEyI0n6qMxf6_nVkfvL55EJpuWpdYkxbXgiLeP8-h0yIW71ftDwDXujOAXTcOo-JucsbrsQYg5bny1o80Dch5htVkE6RO9KV7YhtrMSfmCce7kxDblxjxquA3F9ThYtc_vkuCH_68iZ10S7dSwk1p6IHoCB295nD8WXhCNwMQzeTbR5g"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-primary text-on-primary font-kalam text-xs font-bold px-2 py-0.5 rounded"
+                >
+                  01
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span
+                  class="font-kalam text-xs font-bold text-secondary uppercase tracking-wider"
+                  >Startup Concept &amp; Prototype</span
+                >
+                <span class="font-hand text-xs text-on-surface-variant"
+                  >Academic 2024-2025</span
+                >
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+                PRESERVA
+              </h3>
+              <p
+                class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed"
+              >
+                A startup concept that connects local produce vendors with
+                potential buyers. Its goal is to reduce food waste by helping
+                vendors sell unsold fruits and vegetables before they spoil.
+              </p>
+              <!-- Tags -->
+              <div class="flex flex-wrap gap-1.5 mb-6">
+                <span
+                  class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded"
+                  >HTML</span
+                >
+                <span
+                  class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded"
+                  >CSS</span
+                >
+                <span
+                  class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded"
+                  >JavaScript</span
+                >
+                <span
+                  class="font-hand text-xs bg-tertiary-fixed text-on-tertiary-fixed border border-primary px-2 py-0.5 rounded"
+                  >Figma</span
+                >
+              </div>
+            </div>
+            <!-- Bottom Action -->
+            <div
+              class="pt-3 border-t-2 border-dashed border-primary/30 flex items-center justify-between"
+            >
+              <span class="font-caveat text-sm text-secondary font-bold"
+                >Food Waste Reduction</span
+              >
+              <a
+                class="sketch-btn bg-surface text-primary font-label-md text-label-md px-3 py-1.5 rounded flex items-center gap-1"
+                href="#contact"
+              >
+                <span>View Project</span>
+                <span class="text-xs">↗</span>
+              </a>
+            </div>
+          </article>
+          <!-- PROJECT 02: STUDENT ROSTER MANAGEMENT SYSTEM -->
+          <article
+            class="relative bg-surface-container-lowest border-2 border-primary p-5 rounded-md shadow-[5px_5px_0px_#24211D] rotate-[1.2deg] hover:rotate-0 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+          >
+            <!-- Washi tape at top -->
+            <div
+              class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-28 h-6 washi-tape z-10"
+            ></div>
+            <div>
+              <!-- Thumbnail Visual -->
+              <div
+                class="relative w-full aspect-video bg-surface-variant border-2 border-primary overflow-hidden rounded mb-4"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="A clean terminal code environment showing Java source code and a console application for a Student Roster Management System. The dark terminal window features organized linked-list node outputs and alphabetical sorting displays, placed alongside a hand-sketched algorithm flow diagram on graph paper in natural warm ambient light."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8ydLQEr1dWpSeVTWxgH8cUmZw1hu1SZnwMFXpis88Vjt86AjiUrMIkxsekxParhxpOYsFFJS2RCILDs9l2ZDnbz_cj7QrBULPkKG20a1Ksg3-ynBGkM8ffnj-LmFSM4Jd07es0inWUJ7T-1F1nyHIxeN-ZI0bPUrqDidcEVlk-WoY0EZD2mkX8DOiSjOVIrgKBBbPQt-kXFyPaf7RNIUMtRbKkAffsrtDDbuGFfxc"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-primary text-on-primary font-kalam text-xs font-bold px-2 py-0.5 rounded"
+                >
+                  02
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span
+                  class="font-kalam text-xs font-bold text-secondary uppercase tracking-wider"
+                  >Java Console Application</span
+                >
+                <span class="font-hand text-xs text-on-surface-variant"
+                  >Data Structures</span
+                >
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+                Student Roster System
+              </h3>
+              <p
+                class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed"
+              >
+                A Java-based console application that manages student records
+                using singly linked list operations. Features include inserting,
+                deleting, and displaying student records alphabetically.
+              </p>
+              <!-- Tags -->
+              <div class="flex flex-wrap gap-1.5 mb-6">
+                <span
+                  class="font-hand text-xs bg-secondary-container text-on-secondary-container border border-primary px-2 py-0.5 rounded"
+                  >Java</span
+                >
+                <span
+                  class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded"
+                  >NetBeans IDE</span
+                >
+                <span
+                  class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded"
+                  >Linked Lists</span
+                >
+                <span
+                  class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded"
+                  >Algorithms</span
+                >
+              </div>
+            </div>
+            <!-- Bottom Action -->
+            <div
+              class="pt-3 border-t-2 border-dashed border-primary/30 flex items-center justify-between"
+            >
+              <span class="font-caveat text-sm text-secondary font-bold"
+                >Terminal / OOP</span
+              >
+              <a
+                class="sketch-btn bg-surface text-primary font-label-md text-label-md px-3 py-1.5 rounded flex items-center gap-1"
+                href="#contact"
+              >
+                <span>View Project</span>
+                <span class="text-xs">↗</span>
+              </a>
+            </div>
+          </article>
+          <!-- PROJECT 03: FIGMA PROTOTYPES -->
+          <article
+            class="relative bg-surface-container-lowest border-2 border-primary p-5 rounded-md shadow-[5px_5px_0px_#24211D] rotate-[-0.8deg] hover:rotate-0 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+          >
+            <!-- Pushpin accent -->
+            <div
+              class="absolute -top-3 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-secondary border-2 border-primary shadow-sm flex items-center justify-center z-10"
+            >
+              <div class="w-1.5 h-1.5 bg-surface rounded-full"></div>
+            </div>
+            <div>
+              <!-- Thumbnail Visual -->
+              <div
+                class="relative w-full aspect-video bg-surface-variant border-2 border-primary overflow-hidden rounded mb-4 mt-1"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="A curated showcase of Figma UI/UX interface prototypes including mobile wireframes, user flow diagrams, responsive dashboard layouts, and design system components. The aesthetic is clean and tactile with cream paper backdrops, graphite borders, and sage green accent elements."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuArHiJjytj6Nh9GCn68VZ3hwmC9GB1TM9x7qr5gKy-haD1PwWipK2lU4WIrucuLBCgc3uE0--W_PogW9_GusQ_GTnstQuKm-KTCHlgXimR-5JjhV95MbvJyEOAtwhnCgcpwwy4HFfzsGTgTEDpnssuTfQW4jbiP7Hm-XUqYILiD1ulQzZrKSoh4Ps4ErwmuqLp-JpyxTnftNvW0-sUFljfHedhqH7kHoSb4h1fIrqe3"
+                />
+                <span
+                  class="absolute top-2 left-2 bg-primary text-on-primary font-kalam text-xs font-bold px-2 py-0.5 rounded"
+                >
+                  03
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span
+                  class="font-kalam text-xs font-bold text-secondary uppercase tracking-wider"
+                  >UI / UX Exploration</span
+                >
+                <span class="font-hand text-xs text-on-surface-variant"
+                  >Visual Design</span
+                >
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary mb-2">
+                Figma Prototypes
+              </h3>
+              <p
+                class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed"
+              >
+                Interface prototypes focused on clean layouts, intuitive
+                navigation, and user-friendly website experiences created for
+                academic scenarios and personal creative experiments.
+              </p>
+              <!-- Tags -->
+              <div class="flex flex-wrap gap-1.5 mb-6">
+                <span
+                  class="font-hand text-xs bg-tertiary-fixed text-on-tertiary-fixed border border-primary px-2 py-0.5 rounded"
+                  >Figma</span
+                >
+                <span
+                  class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded"
+                  >UI/UX</span
+                >
+                <span
+                  class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded"
+                  >Wireframing</span
+                >
+                <span
+                  class="font-hand text-xs bg-surface-container border border-primary px-2 py-0.5 rounded"
+                  >User Flows</span
+                >
+              </div>
+            </div>
+            <!-- Bottom Action -->
+            <div
+              class="pt-3 border-t-2 border-dashed border-primary/30 flex items-center justify-between"
+            >
+              <span class="font-caveat text-sm text-secondary font-bold"
+                >Interactive Previews</span
+              >
+              <a
+                class="sketch-btn bg-surface text-primary font-label-md text-label-md px-3 py-1.5 rounded flex items-center gap-1"
+                href="#contact"
+              >
+                <span>View Project</span>
+                <span class="text-xs">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- ========================================== -->
+      <!-- SECTION 5: EDUCATION / PAGE 05             -->
+      <!-- ========================================== -->
+      <section class="relative pt-6" id="education">
+        <!-- Section Divider -->
+        <div class="flex items-center gap-4 mb-8">
+          <span
+            class="bg-secondary-container text-on-secondary-container px-3 py-1 font-kalam text-sm font-bold sketch-border rotate-1 shadow-[2px_2px_0px_#24211D]"
+          >
+            PAGE 05 // MY LEARNING JOURNEY
+          </span>
+          <div
+            class="h-0.5 flex-1 border-t-2 border-dashed border-primary"
+          ></div>
+        </div>
+        <!-- Section Headline -->
+        <div class="mb-10">
+          <h2
+            class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary flex items-center gap-3"
+          >
+            <span>My Learning Journey</span>
+            <span class="font-caveat text-secondary text-2xl hidden sm:inline"
+              >🎓 [Academic Path]</span
+            >
+          </h2>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1"
+          >
+            A continuous path of formal coursework, self-directed research, and
+            practical hands-on technology discovery.
+          </p>
+        </div>
+        <!-- Illustrated Timeline Road Path -->
+        <div
+          class="relative border-l-4 border-dashed border-primary ml-4 md:ml-10 pl-6 md:pl-10 space-y-12"
+        >
+          <!-- Milestone 1: BSIT Degree Coursework -->
+          <div class="relative group">
+            <!-- Pin on Timeline -->
+            <div
+              class="absolute -left-[35px] md:-left-[51px] top-1.5 w-7 h-7 rounded-full bg-tertiary-fixed border-2 border-primary flex items-center justify-center font-caveat font-bold text-sm shadow-[2px_2px_0px_#24211D]"
+            >
+              01
+            </div>
+            <div
+              class="bg-surface-container-lowest border-2 border-primary p-6 rounded-md shadow-[4px_4px_0px_#24211D] max-w-3xl rotate-[-0.5deg] hover:rotate-0 transition-transform"
+            >
+              <div
+                class="flex flex-wrap items-center justify-between gap-2 mb-2"
+              >
+                <span
+                  class="font-kalam text-xs bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded border border-primary font-bold"
+                >
+                  UNDERGRADUATE DEGREE PROGRAM
+                </span>
+                <span class="font-hand text-sm text-on-surface-variant"
+                  >Present • Current Student</span
+                >
+              </div>
+              <h3 class="font-headline-md text-headline-md text-primary">
+                Bachelor of Science in Information Technology (BSIT)
+              </h3>
+              <p
+                class="font-body-sm text-body-sm text-secondary font-bold mt-1"
+              >
+                Higher Education Institution • Department of Computing &amp;
+                Information Sciences
+              </p>
+              <div class="mt-4 pt-3 border-t border-dashed border-primary/30">
+                <p
+                  class="font-label-md text-label-md text-primary font-bold mb-2"
+                >
+                  KEY COURSEWORK &amp; ACADEMIC EXPERIENCES:
+                </p>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-body-sm text-on-surface-variant"
+                >
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-secondary font-bold font-caveat text-lg"
+                      >✦</span
+                    >
+                    <span>Object-Oriented Programming (Java)</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-secondary font-bold font-caveat text-lg"
+                      >✦</span
+                    >
+                    <span>Data Structures &amp; Algorithms</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-secondary font-bold font-caveat text-lg"
+                      >✦</span
+                    >
+                    <span>Web Systems &amp; Technologies</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-secondary font-bold font-caveat text-lg"
+                      >✦</span
+                    >
+                    <span>Database Management Systems</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-secondary font-bold font-caveat text-lg"
+                      >✦</span
+                    >
+                    <span>UI/UX Design Fundamentals</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-secondary font-bold font-caveat text-lg"
+                      >✦</span
+                    >
+                    <span>Information Assurance &amp; Security</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Milestone 2: Foundational Tech Learning -->
+          <div class="relative group">
+            <!-- Pin on Timeline -->
+            <div
+              class="absolute -left-[35px] md:-left-[51px] top-1.5 w-7 h-7 rounded-full bg-secondary-container border-2 border-primary flex items-center justify-center font-caveat font-bold text-sm shadow-[2px_2px_0px_#24211D]"
+            >
+              02
+            </div>
+            <div
+              class="bg-surface-container-lowest border-2 border-primary p-6 rounded-md shadow-[4px_4px_0px_#24211D] max-w-3xl rotate-[0.5deg] hover:rotate-0 transition-transform"
+            >
+              <div
+                class="flex flex-wrap items-center justify-between gap-2 mb-2"
+              >
+                <span
+                  class="font-kalam text-xs bg-surface-container-high text-primary px-2.5 py-0.5 rounded border border-primary font-bold"
+                >
+                  EARLY EXPLORATION &amp; SELF-STUDY
+                </span>
+                <span class="font-hand text-sm text-on-surface-variant"
+                  >Foundational Stage</span
+                >
+              </div>
+              <h3 class="font-headline-md text-headline-md text-primary">
+                Foundational Tech Learning &amp; Practical Exploration
+              </h3>
+              <p
+                class="font-body-sm text-body-sm text-secondary font-bold mt-1"
+              >
+                Independent Experimentation &amp; Practical Workshops
+              </p>
+              <p
+                class="font-body-sm text-body-sm text-on-surface-variant mt-3 leading-relaxed"
+              >
+                Before formal university classes, I explored hardware building,
+                software installation, fundamental script logic, and the
+                mechanics of user interfaces. This innate curiosity feeds my
+                everyday drive to solve practical IT challenges.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span
+                  class="font-hand text-xs bg-surface-container px-2 py-0.5 border border-primary rounded"
+                  >Computer Assembly</span
+                >
+                <span
+                  class="font-hand text-xs bg-surface-container px-2 py-0.5 border border-primary rounded"
+                  >Network Basics</span
+                >
+                <span
+                  class="font-hand text-xs bg-surface-container px-2 py-0.5 border border-primary rounded"
+                  >Self-Directed Coding</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========================================== -->
+      <!-- SECTION 6: CONTACT / PAGE 06               -->
+      <!-- ========================================== -->
+      <section class="relative pt-6" id="contact">
+        <!-- Section Divider -->
+        <div class="flex items-center gap-4 mb-8">
+          <span
+            class="bg-surface-container-high text-primary px-3 py-1 font-kalam text-sm font-bold sketch-border -rotate-1 shadow-[2px_2px_0px_#24211D]"
+          >
+            PAGE 06 // LET'S CONNECT!
+          </span>
+          <div
+            class="h-0.5 flex-1 border-t-2 border-dashed border-primary"
+          ></div>
+        </div>
+        <!-- Section Title -->
+        <div class="mb-10 text-center max-w-2xl mx-auto">
+          <h2
+            class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary"
+          >
+            Let's Connect!
+          </h2>
+          <p class="font-kalam text-secondary text-lg mt-2">
+            "Got a student collaboration, feedback on a project, or just want to
+            chat about tech? Drop a line!"
+          </p>
+        </div>
+        <!-- Contact Layout: Memo Pad & Contact Form -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <!-- Left: Handwritten Memo Note & Socials -->
+          <div class="lg:col-span-5 space-y-6">
+            <div
+              class="relative bg-surface-container-low border-2 border-primary p-6 rounded-md shadow-[5px_5px_0px_#24211D] rotate-[-1deg]"
+            >
+              <div class="absolute -top-3 left-1/4 w-24 h-6 washi-tape"></div>
+              <h3 class="font-caveat text-3xl font-bold text-primary mb-2">
+                Stationery Memo ✉
+              </h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+                I am always happy to connect with fellow IT peers, instructors,
+                and potential mentors. You can reach out directly via:
+              </p>
+              <!-- Social Links / Polaroids -->
+              <div class="space-y-3 font-body-sm text-body-sm">
+                <a
+                  class="p-3 bg-surface-container-lowest border-2 border-primary rounded flex items-center justify-between hover:bg-secondary-container transition-colors group"
+                  href="mailto:crusperomjayross@gmail.com"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="material-symbols-outlined text-secondary"
+                      data-icon="mail"
+                      >mail</span
+                    >
+                    <div>
+                      <span
+                        class="font-bold text-primary block text-xs font-label-md"
+                        >EMAIL ADDRESS</span
+                      >
+                      <span class="text-xs text-on-surface-variant font-kalam"
+                        >crusperomjayross@gmail.com</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="font-caveat text-base group-hover:translate-x-1 transition-transform"
+                    >↗</span
+                  >
+                </a>
+                <a
+                  class="p-3 bg-surface-container-lowest border-2 border-primary rounded flex items-center justify-between hover:bg-secondary-container transition-colors group"
+                  href="https://github.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="material-symbols-outlined text-secondary"
+                      data-icon="code"
+                      >code</span
+                    >
+                    <div>
+                      <span
+                        class="font-bold text-primary block text-xs font-label-md"
+                        >GITHUB</span
+                      >
+                      <span class="text-xs text-on-surface-variant font-kalam"
+                        >github.com/mjayross</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="font-caveat text-base group-hover:translate-x-1 transition-transform"
+                    >↗</span
+                  >
+                </a>
+                <a
+                  class="p-3 bg-surface-container-lowest border-2 border-primary rounded flex items-center justify-between hover:bg-secondary-container transition-colors group"
+                  href="https://linkedin.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="material-symbols-outlined text-secondary"
+                      data-icon="person"
+                      >person</span
+                    >
+                    <div>
+                      <span
+                        class="font-bold text-primary block text-xs font-label-md"
+                        >LINKEDIN</span
+                      >
+                      <span class="text-xs text-on-surface-variant font-kalam"
+                        >linkedin.com/in/mjayross</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="font-caveat text-base group-hover:translate-x-1 transition-transform"
+                    >↗</span
+                  >
+                </a>
+                <a
+                  class="p-3 bg-surface-container-lowest border-2 border-primary rounded flex items-center justify-between hover:bg-secondary-container transition-colors group"
+                  href="https://facebook.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div class="flex items-center gap-3">
+                    <span
+                      class="material-symbols-outlined text-secondary"
+                      data-icon="share"
+                      >share</span
+                    >
+                    <div>
+                      <span
+                        class="font-bold text-primary block text-xs font-label-md"
+                        >FACEBOOK</span
+                      >
+                      <span class="text-xs text-on-surface-variant font-kalam"
+                        >M Jayross Cruspero</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="font-caveat text-base group-hover:translate-x-1 transition-transform"
+                    >↗</span
+                  >
+                </a>
+              </div>
+              <!-- Hand-drawn stamp footer note -->
+              <div
+                class="mt-6 pt-4 border-t-2 border-dashed border-primary text-center"
+              >
+                <span
+                  class="font-hand text-xs text-on-surface-variant bg-surface-variant px-3 py-1 rounded-full border border-primary/40"
+                >
+                  Response time: usually within 24-48 hours ⚡
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Right: Hand-drawn Contact Form on Yellow Legal Ruled Pad -->
+          <div class="lg:col-span-7">
+            <div
+              class="relative bg-[#FEF9C3] border-2 border-primary p-6 md:p-8 rounded-md shadow-[6px_6px_0px_#24211D] rotate-[0.5deg]"
+            >
+              <!-- Red margin rule on legal pad -->
+              <div
+                class="absolute top-0 bottom-0 left-10 w-0.5 bg-red-300 pointer-events-none hidden sm:block"
+              ></div>
+              <!-- Sticky tape at top -->
+              <div
+                class="absolute -top-3 right-1/3 w-28 h-6 washi-tape-sage"
+              ></div>
+              <div class="sm:pl-8">
+                <div
+                  class="flex items-center justify-between border-b-2 border-primary pb-3 mb-6"
+                >
+                  <div>
+                    <h3 class="font-caveat text-3xl font-bold text-primary">
+                      Leave a Message Note 📝
+                    </h3>
+                    <p class="font-kalam text-xs text-on-surface-variant">
+                      Pen your message directly onto this digital pad
                     </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- ========================================== -->
-<!-- SHARED COMPONENT: FOOTER                   -->
-<!-- ========================================== -->
-<footer class="docked full-width bottom border-t-2 border-primary dark:border-outline-variant shadow-[0px_-3px_0px_#24211D] dark:shadow-[0px_-3px_0px_#0d0a07] bg-surface-container dark:bg-surface-container-high mt-20" id="footer">
-<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin max-w-7xl mx-auto py-space-lg gap-space-md">
-<!-- Brand & Copyright Text -->
-<div class="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
-<span class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary font-caveat text-2xl">
-          M Jayross Cruspero
-        </span>
-<span class="hidden sm:inline text-on-surface-variant">•</span>
-<p class="text-body-sm font-body-sm text-on-surface-variant">
-          Hand-sketched with ink &amp; paper by M Jayross Cruspero
-        </p>
-</div>
-<!-- Links defined in Shared Components JSON -->
-<div class="flex flex-wrap justify-center items-center gap-6">
-<a class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="https://twitter.com">
-          Twitter
-        </a>
-<a class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="https://github.com">
-          GitHub
-        </a>
-<a class="text-secondary dark:text-secondary-fixed font-label-md text-label-md underline underline-offset-4 hover:text-secondary transition-colors" href="https://linkedin.com">
-          LinkedIn
-        </a>
-<a class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="https://read.cv">
-          ReadCV
-        </a>
-<a class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors" href="mailto:crusperomjayross@gmail.com">
-          Email
-        </a>
-</div>
-<!-- Back to Top Pencil Button -->
-<div>
-<a aria-label="Scroll back to top" class="sketch-btn bg-surface-lowest text-primary font-label-md text-label-md px-3 py-2 rounded flex items-center gap-1.5 hover:-translate-y-0.5 transition-transform" href="#home">
-<span class="font-caveat text-lg">Back to Top</span>
-<span>✏️</span>
-</a>
-</div>
-</div>
-</footer>
-<!-- Light Vanilla JS for Drawer & Contact Form Validation -->
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Mobile Drawer Toggle Logic
-      const mobileBtn = document.getElementById('mobile-menu-btn');
-      const drawer = document.getElementById('side-nav-drawer');
-      const backdrop = document.getElementById('drawer-backdrop');
-      const closeBtn = document.getElementById('drawer-close-btn');
-      const drawerLinks = document.querySelectorAll('.drawer-link');
+                  </div>
+                  <span
+                    class="font-hand text-xs bg-primary text-on-primary px-2 py-1 rounded"
+                    >Pad #01</span
+                  >
+                </div>
+                <!-- Interactive Form -->
+                <form class="space-y-6" id="sketch-contact-form">
+                  <!-- Name Field with pencil stroke underline -->
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-primary font-bold mb-1"
+                      for="contact-name"
+                    >
+                      YOUR NAME:
+                    </label>
+                    <input
+                      class="w-full bg-transparent border-0 border-b-2 border-primary px-1 py-2 text-primary font-body-md focus:ring-0 focus:border-secondary transition-colors placeholder:text-on-surface-variant/50"
+                      id="contact-name"
+                      placeholder="e.g. Alex Santos"
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                  <!-- Email Field with pencil stroke underline -->
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-primary font-bold mb-1"
+                      for="contact-email"
+                    >
+                      YOUR EMAIL:
+                    </label>
+                    <input
+                      class="w-full bg-transparent border-0 border-b-2 border-primary px-1 py-2 text-primary font-body-md focus:ring-0 focus:border-secondary transition-colors placeholder:text-on-surface-variant/50"
+                      id="contact-email"
+                      placeholder="e.g. alex@example.com"
+                      required=""
+                      type="email"
+                    />
+                  </div>
+                  <!-- Subject Field with pencil stroke underline -->
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-primary font-bold mb-1"
+                      for="contact-subject"
+                    >
+                      SUBJECT / TOPIC:
+                    </label>
+                    <input
+                      class="w-full bg-transparent border-0 border-b-2 border-primary px-1 py-2 text-primary font-body-md focus:ring-0 focus:border-secondary transition-colors placeholder:text-on-surface-variant/50"
+                      id="contact-subject"
+                      placeholder="e.g. Student collaboration or Project inquiry"
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                  <!-- Message Field with ruled paper lines -->
+                  <div>
+                    <label
+                      class="block font-label-md text-label-md text-primary font-bold mb-1"
+                      for="contact-message"
+                    >
+                      MESSAGE:
+                    </label>
+                    <textarea
+                      class="w-full bg-transparent border-2 border-primary rounded p-3 text-primary font-body-md bg-ruled-paper focus:ring-0 focus:border-secondary transition-colors placeholder:text-on-surface-variant/50 resize-y"
+                      id="contact-message"
+                      placeholder="Write your note here..."
+                      required=""
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <!-- Submit Button -->
+                  <div
+                    class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4"
+                  >
+                    <button
+                      class="w-full sm:w-auto sketch-btn bg-secondary text-on-secondary font-label-lg text-label-lg px-8 py-3.5 rounded flex items-center justify-center gap-2 group"
+                      type="submit"
+                    >
+                      <span>Send Message</span>
+                      <span
+                        class="text-base group-hover:translate-x-1 transition-transform"
+                        >✉️</span
+                      >
+                    </button>
+                    <span class="font-hand text-xs text-on-surface-variant">
+                      ✍ Instant Ink &amp; Paper Delivery
+                    </span>
+                  </div>
+                </form>
+                <!-- Client-side notification banner (Hidden by default) -->
+                <div
+                  class="mt-6 p-4 bg-secondary-container border-2 border-primary rounded-md hidden animate-fadeIn shadow-[3px_3px_0px_#24211D]"
+                  id="form-success-banner"
+                >
+                  <div class="flex items-center gap-3">
+                    <span class="text-2xl">🎉</span>
+                    <div>
+                      <h4 class="font-caveat text-xl font-bold text-primary">
+                        Message Received!
+                      </h4>
+                      <p class="font-kalam text-xs text-on-surface-variant">
+                        Thank you for reaching out! Jayross has saved your
+                        scribble and will reply shortly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ========================================== -->
+    <!-- SHARED COMPONENT: FOOTER                   -->
+    <!-- ========================================== -->
+    <footer
+      class="docked full-width bottom border-t-2 border-primary dark:border-outline-variant shadow-[0px_-3px_0px_#24211D] dark:shadow-[0px_-3px_0px_#0d0a07] bg-surface-container dark:bg-surface-container-high mt-20"
+      id="footer"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin max-w-7xl mx-auto py-space-lg gap-space-md"
+      >
+        <!-- Brand & Copyright Text -->
+        <div
+          class="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left"
+        >
+          <span
+            class="text-headline-sm font-headline-sm text-primary dark:text-inverse-primary font-caveat text-2xl"
+          >
+            M Jayross Cruspero
+          </span>
+          <span class="hidden sm:inline text-on-surface-variant">•</span>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">
+            Hand-sketched with ink &amp; paper by M Jayross Cruspero
+          </p>
+        </div>
+        <!-- Links defined in Shared Components JSON -->
+        <div class="flex flex-wrap justify-center items-center gap-6">
+          <a
+            class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+            href="https://twitter.com"
+          >
+            Twitter
+          </a>
+          <a
+            class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+            href="https://github.com"
+          >
+            GitHub
+          </a>
+          <a
+            class="text-secondary dark:text-secondary-fixed font-label-md text-label-md underline underline-offset-4 hover:text-secondary transition-colors"
+            href="https://linkedin.com"
+          >
+            LinkedIn
+          </a>
+          <a
+            class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+            href="https://read.cv"
+          >
+            ReadCV
+          </a>
+          <a
+            class="text-on-surface-variant dark:text-outline-variant font-label-md text-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors"
+            href="mailto:crusperomjayross@gmail.com"
+          >
+            Email
+          </a>
+        </div>
+        <!-- Back to Top Pencil Button -->
+        <div>
+          <a
+            aria-label="Scroll back to top"
+            class="sketch-btn bg-surface-lowest text-primary font-label-md text-label-md px-3 py-2 rounded flex items-center gap-1.5 hover:-translate-y-0.5 transition-transform"
+            href="#home"
+          >
+            <span class="font-caveat text-lg">Back to Top</span>
+            <span>✏️</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Light Vanilla JS for Drawer & Contact Form Validation -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Mobile Drawer Toggle Logic
+        const mobileBtn = document.getElementById("mobile-menu-btn");
+        const drawer = document.getElementById("side-nav-drawer");
+        const backdrop = document.getElementById("drawer-backdrop");
+        const closeBtn = document.getElementById("drawer-close-btn");
+        const drawerLinks = document.querySelectorAll(".drawer-link");
 
-      function openDrawer() {
-        drawer.classList.remove('-translate-x-full');
-        backdrop.classList.remove('hidden');
-      }
+        function openDrawer() {
+          drawer.classList.remove("-translate-x-full");
+          backdrop.classList.remove("hidden");
+        }
 
-      function closeDrawer() {
-        drawer.classList.add('-translate-x-full');
-        backdrop.classList.add('hidden');
-      }
+        function closeDrawer() {
+          drawer.classList.add("-translate-x-full");
+          backdrop.classList.add("hidden");
+        }
 
-      if (mobileBtn) mobileBtn.addEventListener('click', openDrawer);
-      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
-      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+        if (mobileBtn) mobileBtn.addEventListener("click", openDrawer);
+        if (closeBtn) closeBtn.addEventListener("click", closeDrawer);
+        if (backdrop) backdrop.addEventListener("click", closeDrawer);
 
-      drawerLinks.forEach(link => {
-        link.addEventListener('click', closeDrawer);
-      });
-
-      // Contact Form Submission Mock Validation
-      const form = document.getElementById('sketch-contact-form');
-      const successBanner = document.getElementById('form-success-banner');
-
-      if (form) {
-        form.addEventListener('submit', (e) => {
-          e.preventDefault();
-          if (form.checkValidity()) {
-            form.reset();
-            successBanner.classList.remove('hidden');
-            setTimeout(() => {
-              successBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            }, 100);
-          }
+        drawerLinks.forEach((link) => {
+          link.addEventListener("click", closeDrawer);
         });
-      }
-    });
-  </script>
-</body></html>
+
+        // Contact Form Submission Mock Validation
+        const form = document.getElementById("sketch-contact-form");
+        const successBanner = document.getElementById("form-success-banner");
+
+        if (form) {
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            if (form.checkValidity()) {
+              form.reset();
+              successBanner.classList.remove("hidden");
+              setTimeout(() => {
+                successBanner.scrollIntoView({
+                  behavior: "smooth",
+                  block: "nearest",
+                });
+              }, 100);
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
